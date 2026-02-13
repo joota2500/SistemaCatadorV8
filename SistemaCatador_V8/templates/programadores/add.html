@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Novo Programador{% endblock %}
+
+{% block content %}
+
+<div class="mb-4">
+    <h2 class="fw-bold text-success mb-1">
+        <i class="fa-solid fa-user-plus"></i> Cadastrar Novo Programador
+    </h2>
+    <p class="text-muted">Preencha os dados para criar um novo programador com acesso total.</p>
+</div>
+
+<div class="card border-0 shadow-sm">
+    <div class="card-body">
+
+        {% if error %}
+            <div class="alert alert-danger fw-bold">
+                <i class="fa-solid fa-circle-exclamation"></i> {{ error }}
+            </div>
+        {% endif %}
+
+        <form method="POST">
+            {% csrf_token %}
+
+            <!-- Nome -->
+            <div class="mb-3">
+                <label class="form-label fw-bold">Nome Completo</label>
+                <input type="text" name="full_name" class="form-control" required>
+            </div>
+
+            <!-- E-mail -->
+            <div class="mb-3">
+                <label class="form-label fw-bold">E-mail</label>
+                <input type="email" name="email" class="form-control" required>
+            </div>
+
+            <!-- Senha Mestra -->
+            <div class="mb-3">
+                <label class="form-label fw-bold">Senha Mestra</label>
+                <input type="password" name="master_key" class="form-control" required>
+                <small class="text-muted">Somente o programador sabe essa senha.</small>
+            </div>
+
+            <!-- Info -->
+            <div class="alert alert-info">
+                <i class="fa-solid fa-key"></i>
+                A senha inicial do programador será:
+                <strong style="font-size: 18px;">0000</strong><br>
+                Ele poderá alterar após o primeiro login.
+            </div>
+
+            <!-- Botão -->
+            <button class="btn btn-success w-100">
+                <i class="fa-solid fa-check"></i> Criar Programador
+            </button>
+
+        </form>
+
+        <div class="text-center mt-3">
+            <a href="{% url 'lista_programadores' %}" class="text-muted">
+                <i class="fa-solid fa-arrow-left"></i> Voltar
+            </a>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

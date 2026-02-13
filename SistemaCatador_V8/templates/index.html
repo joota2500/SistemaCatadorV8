@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Login — Sistema Catador V8{% endblock %}
+
+{% block content %}
+
+<style>
+    .login-wrapper {
+        width: 100%;
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-card {
+        background: rgba(255, 255, 255, 0.78);
+        border-radius: 26px;
+        padding: 50px;
+        width: 100%;
+        box-shadow: 0 0 40px rgba(0,0,0,0.15);
+        backdrop-filter: blur(12px);
+    }
+
+    .login-logo img {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .header-title {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 900;
+        margin-bottom: 5px;
+        color: #0a4128;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #2c6144;
+        margin-bottom: 25px;
+    }
+
+    label { font-weight: 600; color: #124b32; }
+
+    .form-control, .form-select {
+        height: 46px;
+        border-radius: 12px;
+        border: 1px solid #c9e7d2;
+        background: rgba(255,255,255,0.9);
+    }
+
+    .password-wrapper {
+        position: relative;
+    }
+
+    .password-wrapper i {
+        position: absolute;
+        right: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #0f4b31;
+        cursor: pointer;
+    }
+
+    .btn-login {
+        height: 50px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, #1F7F50, #38C776);
+        border: none;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .bottom-links {
+        margin-top: 18px;
+        display: flex;
+        justify-content: center;
+        gap: 28px;
+    }
+
+    .bottom-links a {
+        color: #003f26;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .security-info {
+        text-align: center;
+        margin-top: 20px;
+        opacity: 0.7;
+        font-size: 13px;
+    }
+</style>
+
+<div class="login-wrapper">
+<div class="login-card">
+
+    <div class="login-logo text-center">
+        <img src="{% static 'img/logo_amsa.png' %}">
+    </div>
+
+    <h3 class="header-title">Sistema Catador V8</h3>
+    <p class="subtitle">Selecione o município e o encarregado</p>
+
+    {% if error %}
+    <div class="alert alert-danger text-center">{{ error }}</div>
+    {% endif %}
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <label>Município</label>
+        <select name="municipality" class="form-select mb-3" required>
+            <option value="">Selecione...</option>
+            {% for m in municipalities %}
+                <option value="{{ m.id }}">{{ m.name }}</option>
+            {% endfor %}
+        </select>
+
+        <label>Encarregado</label>
+        <select name="username" class="form-select mb-3" required>
+            <option value="">Selecione...</option>
+            {% for u in encarregados %}
+                <option value="{{ u.username }}">{{ u.full_name }}</option>
+            {% endfor %}
+        </select>
+
+        <label>Senha</label>
+        <div class="password-wrapper mb-3">
+            <input type="password" name="password" id="senha" class="form-control" required>
+            <i class="fa fa-eye" onclick="toggleSenha()"></i>
+        </div>
+
+        <button class="btn-login w-100">
+            <i class="fa-solid fa-lock"></i> Entrar
+        </button>
+    </form>
+
+    <div class="bottom-links">
+        <a href="{% url 'login_programador' %}">Sou programador</a>
+        <a href="{% url 'esqueci_senha' %}">Esqueci a senha</a>
+    </div>
+
+    <div class="security-info">🔒 Sua conexão é segura</div>
+
+</div>
+</div>
+
+<script>
+function toggleSenha(){
+    const s = document.getElementById("senha");
+    s.type = s.type === "password" ? "text" : "password";
+}
+</script>
+
+{% endblock %}

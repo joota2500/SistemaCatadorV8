@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Editar Município{% endblock %}
+
+{% block content %}
+
+<style>
+    .form-card {
+        max-width: 650px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 35px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .logo-preview {
+        width: 120px;
+        height: 120px;
+        border-radius: 8px;
+        object-fit: contain;
+        border: 1px solid #ddd;
+        background: #f8f8f8;
+    }
+</style>
+
+<h3 class="text-success fw-bold mb-4 text-center">
+    <i class="fa-solid fa-pen-to-square"></i> Editar Município
+</h3>
+
+<div class="form-card">
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <!-- Nome -->
+        <div class="mb-3">
+            <label class="fw-bold">Nome do Município</label>
+            <input type="text" 
+                   name="name" 
+                   id="municipio_nome"
+                   class="form-control"
+                   value="{{ municipio.name }}"
+                   required>
+        </div>
+
+        <!-- Slug -->
+        <div class="mb-3">
+            <label class="fw-bold">Slug (gerado automaticamente)</label>
+            <input type="text"
+                   name="slug"
+                   id="municipio_slug"
+                   class="form-control bg-light"
+                   readonly
+                   value="{{ municipio.slug }}">
+            <div class="form-text">
+                O sistema usa o slug como identificador interno. Ex.: <b>municipio_baturite</b>
+            </div>
+        </div>
+
+        <!-- Logo -->
+        <div class="mb-3">
+            <label class="fw-bold d-block">Logomarca atual</label>
+            {% if municipio.logo %}
+                <img src="{{ municipio.logo.url }}" class="logo-preview mb-2">
+            {% else %}
+                <p class="text-muted">Nenhuma logo enviada ainda.</p>
+            {% endif %}
+
+            <label class="fw-bold mt-2">Alterar logomarca (opcional):</label>
+            <input type="file" name="logo" class="form-control">
+        </div>
+
+        <!-- Status -->
+        <div class="mb-3">
+            <label class="fw-bold">Status</label>
+            <select name="is_active" class="form-select">
+                <option value="True" {% if municipio.is_active %}selected{% endif %}>Ativo</option>
+                <option value="False" {% if not municipio.is_active %}selected{% endif %}>Inativo</option>
+            </select>
+        </div>
+
+        <!-- Botões -->
+        <div class="d-flex justify-content-between mt-4">
+            <a href="{% url 'painel_programador' %}" class="btn btn-secondary">
+                <i class="fa-solid fa-arrow-left"></i> Cancelar
+            </a>
+
+            <button type="submit" class="btn btn-success">
+                <i class="fa-solid fa-check"></i> Salvar Alterações
+            </button>
+        </div>
+
+    </form>
+
+</div>
+
+<!-- JS PARA ATUALIZAÇÃO DO SLUG -->
+<script>
+    const nomeInput = document.getElementById("municipio_nome");
+    const slugInput = document.getElementById("municipio_slug");
+
+    nomeInput.addEventListener("input", function () {
+        let texto = nomeInput.value
+            .toLowerCase()
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+            .replace(/[^a-z0-9\s]/g, "")
+            .trim()
+            .replace(/\s+/g, "_");
+
+        slugInput.value = "municipio_" + texto;
+    });
+</script>
+
+{% endblock %}

@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Programadores — Sistema Catador V8{% endblock %}
+
+{% block content %}
+
+<style>
+    .disabled-link {
+        opacity: 0.4;
+        pointer-events: none;
+    }
+</style>
+
+<div class="mb-4">
+    <h2 class="fw-bold text-success mb-1">
+        <i class="fa-solid fa-user-gear"></i> Programadores do Sistema
+    </h2>
+    <p class="text-muted">Gerencie os programadores com acesso total ao Sistema Catador V8.</p>
+
+    {% if qtd < maximo %}
+        <a href="{% url 'adicionar_programador' %}" class="btn btn-success mt-2">
+            <i class="fa-solid fa-plus"></i> Novo Programador
+        </a>
+    {% else %}
+        <button class="btn btn-secondary mt-2 disabled-link">
+            <i class="fa-solid fa-user-lock"></i> Limite Máximo (2)
+        </button>
+    {% endif %}
+</div>
+
+{% if qtd == 1 %}
+<div class="alert alert-warning">
+    <i class="fa-solid fa-triangle-exclamation"></i>
+    Apenas <strong>1 programador</strong> cadastrado.  
+    Para segurança do sistema, recomenda-se cadastrar outro.
+</div>
+{% endif %}
+
+{% if qtd == 2 %}
+<div class="alert alert-info">
+    <i class="fa-solid fa-circle-info"></i>
+    Capacidade máxima de programadores atingida (2).
+</div>
+{% endif %}
+
+<div class="card border-0 shadow-sm">
+    <div class="card-body">
+
+        <div class="table-responsive" style="max-height: 420px; overflow-y: auto;">
+            <table class="table table-sm align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Usuário</th>
+                        <th>E-mail</th>
+                        <th class="text-end">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                {% for p in programadores %}
+                    <tr>
+                        <td>{{ p.full_name|default:"—" }}</td>
+                        <td>
+                            {{ p.username }}
+                            {% if request.user.id == p.id %}
+                                <span class="badge bg-success ms-1">Você</span>
+                            {% endif %}
+                        </td>
+                        <td>{{ p.email }}</td>
+
+                        <td class="text-end">
+
+                            <a href="{% url 'editar_programador' p.id %}" 
+                               class="btn btn-warning btn-sm" title="Editar">
+                                <i class="fa-solid fa-pen"></i>
+                            </a>
+
+                            {% if request.user.id == p.id %}
+                                <!-- Não pode excluir a si mesmo -->
+                                <button class="btn btn-secondary btn-sm disabled-link" title="Você não pode se excluir">
+                                    <i class="fa-solid fa-ban"></i>
+                                </button>
+
+                            {% else %}
+
+                                <a href="{% url 'excluir_programador' p.id %}" 
+                                   class="btn btn-danger btn-sm btn-confirm"
+                                   data-msg="Excluir programador {{ p.username }}? Isso não poderá ser desfeito.">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+
+                            {% endif %}
+                        </td>
+                    </tr>
+
+                {% empty %}
+                    <tr>
+                        <td colspan="4" class="text-center text-muted">
+                            Nenhum programador cadastrado.
+                        </td>
+                    </tr>
+                {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<script>
+document.querySelectorAll(".btn-confirm").forEach(btn => {
+    btn.addEventListener("click", e => {
+        const msg = btn.getAttribute("data-msg");
+        if (!confirm(msg)) e.preventDefault();
+    });
+});
+</script>
+
+{% endblock %}

@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Redefinir Senha — Sistema Catador V8{% endblock %}
+
+{% block content %}
+
+<style>
+
+    .reset-wrapper {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .reset-card {
+        width: 100%;
+        max-width: 520px;
+        background: #ffffff;
+        padding: 35px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+        animation: fadeIn 0.5s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(12px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .error-box {
+        background: #ffebee;
+        color: #b71c1c;
+        padding: 12px;
+        border-radius: 8px;
+        border-left: 5px solid #d32f2f;
+        margin-bottom: 20px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    .success-box {
+        background: #e6f4ea;
+        color: #1b5e20;
+        padding: 12px;
+        border-radius: 8px;
+        border-left: 5px solid #2e7d32;
+        margin-bottom: 20px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-weight: 600;
+    }
+
+    .password-wrapper {
+        position: relative;
+    }
+
+    .toggle-eye {
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #666;
+        font-size: 18px;
+    }
+
+</style>
+
+<div class="reset-wrapper">
+
+    <div class="reset-card">
+
+        <h3 class="text-center text-success fw-bold mb-3">
+            <i class="fa-solid fa-unlock-keyhole"></i> Redefinir Senha
+        </h3>
+
+        <p class="text-center text-muted mb-4">
+            Informe seu município, usuário, código recebido por e-mail e nova senha
+        </p>
+
+        {% if error %}
+        <div class="error-box">
+            <i class="fa-solid fa-circle-exclamation"></i> {{ error }}
+        </div>
+        {% endif %}
+
+        {% if success %}
+        <div class="success-box">
+            <i class="fa-solid fa-circle-check"></i> {{ success }}
+        </div>
+        {% endif %}
+
+        <form method="POST">
+            {% csrf_token %}
+
+            <!-- MUNICÍPIO -->
+            <div class="mb-3">
+                <label class="form-label fw-bold">Município</label>
+                <select class="form-select" name="municipality" required>
+                    <option value="">Selecione...</option>
+                    {% for m in municipalities %}
+                        <option value="{{ m.id }}">{{ m.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <!-- USUÁRIO -->
+            <div class="mb-3">
+                <label class="form-label fw-bold">Usuário</label>
+                <input type="text" name="username" class="form-control"
+                       placeholder="Seu usuário" required>
+            </div>
+
+            <!-- CÓDIGO -->
+            <div class="mb-3">
+                <label class="form-label fw-bold">Código recebido por e-mail</label>
+                <input type="text" name="code" class="form-control"
+                       placeholder="Ex: 123456" required>
+            </div>
+
+            <!-- SENHA -->
+            <div class="mb-3 password-wrapper">
+                <label class="form-label fw-bold">Nova senha</label>
+                <input type="password" id="senha1" name="password1"
+                       class="form-control" placeholder="Digite a nova senha" required>
+                <i class="fa-solid fa-eye toggle-eye" onclick="toggleSenha('senha1')"></i>
+            </div>
+
+            <!-- CONFIRMAR SENHA -->
+            <div class="mb-3 password-wrapper">
+                <label class="form-label fw-bold">Confirmar senha</label>
+                <input type="password" id="senha2" name="password2"
+                       class="form-control" placeholder="Repita a nova senha" required>
+                <i class="fa-solid fa-eye toggle-eye" onclick="toggleSenha('senha2')"></i>
+            </div>
+
+            <button class="btn btn-success w-100 mt-2">
+                <i class="fa-solid fa-check"></i> Redefinir Senha
+            </button>
+
+        </form>
+
+        <div class="text-center mt-3">
+            <a href="/" class="text-muted">
+                <i class="fa-solid fa-arrow-left"></i> Voltar ao login
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<script>
+function toggleSenha(id) {
+    const campo = document.getElementById(id);
+    campo.type = campo.type === "password" ? "text" : "password";
+}
+</script>
+
+{% endblock %}

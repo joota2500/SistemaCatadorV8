@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Senha Gerada — Sistema Catador V8{% endblock %}
+
+{% block content %}
+
+<style>
+    .senha-card {
+        max-width: 500px;
+        margin: 50px auto;
+        background: #ffffff;
+        padding: 35px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        animation: fadeIn .5s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .senha-box {
+        background: #e8f5e9;
+        border-left: 6px solid #2e7d32;
+        padding: 18px;
+        margin: 20px 0;
+        font-size: 22px;
+        font-weight: 700;
+        border-radius: 10px;
+        color: #1b5e20;
+    }
+
+    .copy-btn {
+        margin-top: 10px;
+        font-weight: 600;
+    }
+
+    .info {
+        color: #555;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+</style>
+
+<div class="senha-card">
+
+    <h3 class="text-success fw-bold">
+        <i class="fa-solid fa-lock"></i> Senha Criada com Sucesso
+    </h3>
+
+    <p class="mt-2 mb-1"><strong>Encarregado:</strong> {{ nome }}</p>
+    <p><strong>Usuário:</strong> {{ username }}</p>
+    <p><strong>Município:</strong> {{ municipio }}</p>
+
+    <div class="senha-box">
+        {{ senha }}
+    </div>
+
+    <button class="btn btn-success copy-btn" onclick="copiarSenha()">
+        <i class="fa-solid fa-copy"></i> Copiar senha
+    </button>
+
+    <p class="info">
+        ⚠ Guarde bem esta senha. Ela só aparece uma vez.<br>
+        O encarregado poderá alterá-la depois.
+    </p>
+
+    <a href="{% url 'painel_programador' %}" class="btn btn-secondary mt-4">
+        <i class="fa-solid fa-arrow-left"></i> Voltar ao Painel
+    </a>
+
+</div>
+
+<script>
+function copiarSenha() {
+    navigator.clipboard.writeText("{{ senha }}");
+    alert("Senha copiada!");
+}
+</script>
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Excluir Programador{% endblock %}
+
+{% block content %}
+
+<div class="mb-4">
+    <h2 class="fw-bold text-danger mb-1">
+        <i class="fa-solid fa-user-xmark"></i> Excluir Programador
+    </h2>
+    <p class="text-muted">
+        Ação crítica de segurança — proceda com atenção.
+    </p>
+</div>
+
+<div class="card border-0 shadow-sm">
+    <div class="card-body">
+
+        {% if ultimo %}
+            <!-- BLOQUEADO: ÚLTIMO PROGRAMADOR -->
+            <div class="alert alert-danger fw-bold">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                O sistema <strong>não pode ficar sem programador</strong>!
+                <br>
+                Exclusão bloqueada.
+            </div>
+
+            <a href="{% url 'lista_programadores' %}" class="btn btn-outline-danger w-100 mt-3">
+                <i class="fa-solid fa-arrow-left"></i> Voltar
+            </a>
+
+        {% elif proprio %}
+            <!-- BLOQUEADO: TENTOU EXCLUIR A SI MESMO -->
+            <div class="alert alert-warning fw-bold">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                Você está tentando excluir seu próprio acesso!
+                <br><br>
+                Faça login com o outro programador para realizar esta ação.
+            </div>
+
+            <a href="{% url 'lista_programadores' %}" class="btn btn-outline-warning w-100 mt-3">
+                <i class="fa-solid fa-arrow-left"></i> Voltar
+            </a>
+
+        {% else %}
+
+            <!-- CONFIRMAÇÃO NORMAL -->
+            <div class="alert alert-warning">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                Tem certeza que deseja excluir o programador:
+                <br>
+                <strong>{{ prog.full_name|default:prog.username }}</strong>?
+                <br><br>
+                Esta ação é permanente.
+            </div>
+
+            <form method="POST">
+                {% csrf_token %}
+                <button class="btn btn-danger w-100">
+                    <i class="fa-solid fa-trash"></i> Confirmar Exclusão
+                </button>
+            </form>
+
+            <a href="{% url 'lista_programadores' %}" class="btn btn-outline-secondary w-100 mt-3">
+                <i class="fa-solid fa-arrow-left"></i> Cancelar
+            </a>
+
+        {% endif %}
+
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Adicionar Município{% endblock %}
+
+{% block content %}
+
+<style>
+    body { background: #e9f5ec; }
+
+    .form-card {
+        max-width: 650px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 35px;
+        border-radius: 14px;
+        border-left: 6px solid #198754;
+        box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    }
+
+    label.fw-bold {
+        color: #145c32;
+        font-size: 15px;
+    }
+
+    .form-control, .form-select {
+        border-radius: 10px;
+        border: 1px solid #c8dccf;
+    }
+
+    #preview_logo {
+        width: 140px;
+        height: 140px;
+        border-radius: 12px;
+        border: 2px solid #a5d6b1;
+        object-fit: contain;
+        display: none;
+        margin-top: 10px;
+        padding: 5px;
+        background: #ffffff;
+    }
+
+    .btn-success {
+        background: #198754;
+        border-color: #198754;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+
+    .btn-success:hover {
+        background: #157347;
+    }
+
+    .btn-secondary {
+        border-radius: 10px;
+        font-weight: 600;
+    }
+</style>
+
+<h3 class="text-success fw-bold mb-4 text-center">
+    <i class="fa-solid fa-building-circle-check"></i> Cadastrar Novo Município
+</h3>
+
+<div class="form-card">
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+
+        <!-- Nome -->
+        <div class="mb-3">
+            <label class="fw-bold">Nome do Município</label>
+            <input type="text"
+                   name="name"
+                   id="municipio_nome"
+                   class="form-control"
+                   placeholder="Insira o nome do município (Ex: Baturité)"
+                   required>
+        </div>
+
+        <!-- Slug -->
+        <div class="mb-3">
+            <label class="fw-bold">Identificador (Slug)</label>
+            <input type="text"
+                   name="slug"
+                   id="municipio_slug"
+                   class="form-control bg-light"
+                   readonly>
+
+            <div class="form-text text-muted">
+                Gerado automaticamente no formato:
+                <strong>municipio_nome_da_cidade</strong>
+            </div>
+        </div>
+
+        <!-- Logo -->
+        <div class="mb-3">
+            <label class="fw-bold">Logomarca (opcional)</label>
+            <input type="file"
+                   name="logo"
+                   id="logo_input"
+                   class="form-control">
+
+            <!-- Preview -->
+            <img id="preview_logo" alt="Prévia da logomarca">
+        </div>
+
+        <!-- Status -->
+        <div class="mb-3">
+            <label class="fw-bold">Status</label>
+            <select name="is_active" class="form-select">
+                <option value="True">Ativo</option>
+                <option value="False">Inativo</option>
+            </select>
+        </div>
+
+        <!-- Botões -->
+        <div class="d-flex justify-content-between mt-4">
+            <a href="{% url 'painel_programador' %}" class="btn btn-secondary px-4">
+                <i class="fa-solid fa-arrow-left"></i> Cancelar
+            </a>
+
+            <button type="submit" class="btn btn-success px-4">
+                <i class="fa-solid fa-check"></i> Salvar Município
+            </button>
+        </div>
+
+    </form>
+</div>
+
+<!-- GERAR SLUG AUTOMÁTICO -->
+<script>
+    const nomeInput = document.getElementById("municipio_nome");
+    const slugInput = document.getElementById("municipio_slug");
+
+    nomeInput.addEventListener("input", function () {
+        let texto = nomeInput.value
+            .toLowerCase()
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+            .replace(/[^a-z0-9\s]/g, "")
+            .trim()
+            .replace(/\s+/g, "_");
+
+        slugInput.value = "municipio_" + texto;
+    });
+</script>
+
+<!-- PREVIEW DA LOGO -->
+<script>
+    const logoInput = document.getElementById("logo_input");
+    const preview = document.getElementById("preview_logo");
+
+    logoInput.addEventListener("change", () => {
+        const file = logoInput.files[0];
+        if (file) {
+            preview.src = URL.createObjectURL(file);
+            preview.style.display = "block";
+        }
+    });
+</script>
+
+{% endblock %}

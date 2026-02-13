@@ -1,0 +1,207 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Editar Encarregado Municipal{% endblock %}
+
+{% block content %}
+
+<style>
+    .form-card {
+        max-width: 800px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 35px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+    }
+
+    .photo-preview {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid #ddd;
+        background: #f1f1f1;
+        margin-bottom: 10px;
+    }
+</style>
+
+<h3 class="text-success fw-bold text-center mb-4">
+    <i class="fa-solid fa-user-pen"></i> Editar Encarregado Municipal
+</h3>
+
+<div class="form-card">
+
+    {% if messages %}
+        {% for m in messages %}
+            <div class="alert alert-{{ m.tags }} fw-bold" style="font-size: 15px;">
+                <i class="fa-solid fa-circle-exclamation"></i> {{ m }}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <!-- LOGIN + NOME -->
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label class="fw-bold">Login (username) *</label>
+            <input type="text" class="form-control" name="username"
+                   value="{{ user.username }}" required>
+            <small class="text-muted">Sem espaços, sem acentos.</small>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label class="fw-bold">Nome Completo *</label>
+            <input type="text" class="form-control" name="full_name"
+                   value="{{ user.full_name }}" required>
+        </div>
+    </div>
+
+    <!-- APELIDO -->
+    <div class="mb-3">
+        <label class="fw-bold">Apelido</label>
+        <input type="text" class="form-control" name="nickname"
+               value="{{ user.nickname }}">
+    </div>
+
+    <!-- CPF + DATA -->
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label class="fw-bold">CPF</label>
+            <input type="text" id="cpf_input" maxlength="14"
+                   class="form-control" name="cpf"
+                   value="{{ user.cpf }}"
+                   placeholder="000.000.000-00">
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label class="fw-bold">Data de Nascimento</label>
+            <input type="date" class="form-control" name="birth_date"
+                   value="{{ user.birth_date|date:'Y-m-d' }}">
+        </div>
+    </div>
+
+    <!-- TELEFONE + ENDEREÇO -->
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label class="fw-bold">Telefone</label>
+            <input type="text" class="form-control" name="phone"
+                   value="{{ user.phone }}">
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label class="fw-bold">Endereço</label>
+            <input type="text" class="form-control" name="address"
+                   value="{{ user.address }}">
+        </div>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="mb-3">
+        <label class="fw-bold">E-mail *</label>
+        <input type="email" class="form-control"
+               name="email" required
+               value="{{ user.email }}">
+        <small class="text-muted">Usado para recuperação de senha.</small>
+    </div>
+
+    <hr>
+
+    <!-- SENHA -->
+    <div class="row">
+        <div class="col-md-8 mb-3">
+            <label class="fw-bold">Nova senha (opcional)</label>
+            <input type="text" class="form-control"
+                   name="password_manual"
+                   placeholder="Digite uma nova senha (sem acentos, sem espaços)">
+        </div>
+
+        <div class="col-md-4 mb-3 d-flex align-items-end">
+            <button type="submit" name="gerar_senha" value="1"
+                    class="btn btn-warning w-100 fw-bold">
+                <i class="fa-solid fa-bolt"></i> Gerar senha automática
+            </button>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- MUNICÍPIO -->
+    <div class="mb-3">
+        <label class="fw-bold">Município *</label>
+        <select class="form-select" name="municipality" required>
+            {% for m in municipios %}
+                <option value="{{ m.id }}"
+                    {% if user.municipality_id == m.id %}selected{% endif %}>
+                    {{ m.name }}
+                </option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <!-- PERMISSÃO -->
+    <div class="mb-3">
+        <label class="fw-bold">Nível de Permissão</label>
+        <select class="form-select" name="permission_level">
+            <option value="full" {% if user.permission_level == 'full' %}selected{% endif %}>
+                Acesso Completo
+            </option>
+            <option value="view" {% if user.permission_level == 'view' %}selected{% endif %}>
+                Apenas Visualização
+            </option>
+            <option value="download" {% if user.permission_level == 'download' %}selected{% endif %}>
+                Visualizar e Baixar
+            </option>
+        </select>
+    </div>
+
+    <!-- FOTO -->
+    <div class="mb-3">
+        <label class="fw-bold">Foto</label><br>
+
+        {% if user.photo %}
+            <img src="{{ user.photo.url }}" class="photo-preview">
+        {% endif %}
+
+        <input type="file" class="form-control mt-2" name="photo">
+    </div>
+
+    <!-- STATUS -->
+    <div class="mb-3">
+        <label class="fw-bold">Status</label>
+        <select name="is_active" class="form-select">
+            <option value="True" {% if user.is_active %}selected{% endif %}>Ativo</option>
+            <option value="False" {% if not user.is_active %}selected{% endif %}>Inativo</option>
+        </select>
+    </div>
+
+    <!-- BOTÕES -->
+    <div class="d-flex justify-content-between mt-4">
+        <a href="{% url 'painel_programador' %}" class="btn btn-secondary">
+            Cancelar
+        </a>
+
+        <button type="submit" class="btn btn-success">
+            <i class="fa-solid fa-floppy-disk"></i> Salvar Alterações
+        </button>
+    </div>
+
+</form>
+
+</div>
+
+<script>
+document.getElementById("cpf_input").addEventListener("input", function () {
+    let cpf = this.value.replace(/\D/g, "");
+    if (cpf.length <= 11) {
+        cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
+        cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
+        cpf = cpf.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+        this.value = cpf;
+    }
+});
+</script>
+
+{% endblock %}

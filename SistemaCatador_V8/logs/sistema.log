@@ -1,0 +1,1125 @@
+[INFO] 2025-11-20 18:49:23,749 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 18:49:47,603 | "GET / HTTP/1.1" 200 13318
+[INFO] 2025-11-20 18:49:55,659 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 18:49:55,743 | "GET / HTTP/1.1" 200 10290
+[INFO] 2025-11-20 18:50:38,149 | "POST / HTTP/1.1" 200 10434
+[INFO] 2025-11-20 18:52:20,853 | "POST / HTTP/1.1" 200 10434
+[INFO] 2025-11-20 18:52:30,469 | "POST / HTTP/1.1" 200 10434
+[INFO] 2025-11-20 18:52:39,745 | "POST / HTTP/1.1" 200 10434
+[INFO] 2025-11-20 18:52:49,579 | "POST / HTTP/1.1" 200 10434
+[INFO] 2025-11-20 18:52:59,794 | "POST / HTTP/1.1" 200 10434
+[INFO] 2025-11-20 18:53:07,788 | "POST / HTTP/1.1" 200 10460
+[INFO] 2025-11-20 18:53:41,283 | "GET /login-programador/ HTTP/1.1" 200 8567
+[INFO] 2025-11-20 18:53:47,649 | "POST /login-programador/ HTTP/1.1" 200 8567
+[INFO] 2025-11-20 18:53:52,782 | "POST /login-programador/ HTTP/1.1" 200 8567
+[INFO] 2025-11-20 18:53:57,898 | "POST /login-programador/ HTTP/1.1" 200 8567
+[INFO] 2025-11-20 18:54:02,931 | "POST /login-programador/ HTTP/1.1" 200 8567
+[INFO] 2025-11-20 18:54:08,074 | "POST /login-programador/ HTTP/1.1" 200 8567
+[INFO] 2025-11-20 18:54:11,714 | "POST /login-programador/ HTTP/1.1" 200 8567
+[INFO] 2025-11-20 18:54:15,142 | "POST /login-programador/ HTTP/1.1" 200 8567
+[INFO] 2025-11-20 18:54:18,280 | "POST /login-programador/ HTTP/1.1" 200 8567
+[INFO] 2025-11-20 18:54:21,410 | "POST /login-programador/ HTTP/1.1" 200 8567
+[INFO] 2025-11-20 18:54:28,739 | "POST /login-programador/ HTTP/1.1" 200 8567
+[INFO] 2025-11-20 18:54:31,705 | "POST /login-programador/ HTTP/1.1" 200 8567
+[INFO] 2025-11-20 18:54:36,261 | "POST /login-programador/ HTTP/1.1" 200 8567
+[INFO] 2025-11-20 18:54:40,147 | "POST /login-programador/ HTTP/1.1" 200 8567
+[INFO] 2025-11-20 18:54:46,788 | "POST /login-programador/ HTTP/1.1" 200 8567
+[INFO] 2025-11-20 18:54:50,040 | "POST /login-programador/ HTTP/1.1" 200 8567
+[INFO] 2025-11-20 19:12:36,346 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 19:12:36,479 | "GET /painel-programador/ HTTP/1.1" 200 16620
+[INFO] 2025-11-20 19:12:44,412 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 19:12:44,503 | "GET / HTTP/1.1" 200 10290
+[INFO] 2025-11-20 19:12:44,558 | "GET /static/img/logo_amsa.png HTTP/1.1" 304 0
+[INFO] 2025-11-20 19:12:52,653 | "POST / HTTP/1.1" 200 10434
+[INFO] 2025-11-20 19:13:04,771 | "POST / HTTP/1.1" 200 10434
+[INFO] 2025-11-20 19:13:13,252 | "POST / HTTP/1.1" 200 10434
+[INFO] 2025-11-20 19:13:22,630 | "POST / HTTP/1.1" 200 10434
+[INFO] 2025-11-20 19:13:30,976 | "POST / HTTP/1.1" 200 10434
+[INFO] 2025-11-20 19:13:37,805 | "POST / HTTP/1.1" 200 10460
+[INFO] 2025-11-20 19:13:42,573 | "GET /login-programador/ HTTP/1.1" 200 9096
+[INFO] 2025-11-20 19:13:50,675 | "POST /login-programador/ HTTP/1.1" 200 9277
+[INFO] 2025-11-20 19:13:57,386 | "POST /login-programador/ HTTP/1.1" 200 9277
+[INFO] 2025-11-20 19:14:02,003 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 19:14:02,083 | "GET /painel-programador/ HTTP/1.1" 200 16620
+[INFO] 2025-11-20 19:14:13,650 | "GET /relatorios/logins/ HTTP/1.1" 200 56792
+[INFO] 2025-11-20 19:14:42,523 | "GET /painel-programador/ HTTP/1.1" 200 16620
+[INFO] 2025-11-20 19:22:58,969 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-20 19:22:59,753 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 19:23:20,907 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-20 19:23:22,107 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 19:23:56,246 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-20 19:23:57,167 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 19:23:58,433 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-20 19:23:59,204 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 19:24:39,853 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-20 19:24:40,723 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 19:25:31,161 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-20 19:25:31,935 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 19:25:35,617 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 19:25:35,769 | "GET / HTTP/1.1" 200 10290
+[INFO] 2025-11-20 19:25:44,519 | "POST / HTTP/1.1" 200 10434
+[INFO] 2025-11-20 19:25:52,716 | "POST / HTTP/1.1" 200 10434
+[INFO] 2025-11-20 19:27:32,902 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-20 19:27:34,263 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 19:30:46,920 | "POST / HTTP/1.1" 200 10434
+[INFO] 2025-11-20 19:30:55,702 | "POST / HTTP/1.1" 200 10434
+[INFO] 2025-11-20 19:40:08,626 | "POST / HTTP/1.1" 200 10434
+[INFO] 2025-11-20 19:40:18,909 | "GET /login-programador/ HTTP/1.1" 200 9641
+[INFO] 2025-11-20 19:40:23,694 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 19:40:23,812 | "GET /painel-programador/ HTTP/1.1" 200 20190
+[INFO] 2025-11-20 19:40:52,849 | "GET /relatorios/logins/ HTTP/1.1" 200 64392
+[INFO] 2025-11-20 19:40:55,473 | "GET /encarregados/novo/ HTTP/1.1" 200 12652
+[INFO] 2025-11-20 19:40:59,907 | "GET /municipios/novo/ HTTP/1.1" 200 12977
+[INFO] 2025-11-20 19:41:01,392 | "GET /painel-programador/ HTTP/1.1" 200 20190
+[INFO] 2025-11-20 19:41:12,591 | "GET /municipios/novo/ HTTP/1.1" 200 12977
+[INFO] 2025-11-20 19:50:28,847 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\urls.py changed, reloading.
+[INFO] 2025-11-20 19:50:29,700 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 19:59:19,163 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views_programadores.py changed, reloading.
+[INFO] 2025-11-20 19:59:19,905 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 20:05:31,890 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 20:05:32,036 | "GET / HTTP/1.1" 200 10290
+[INFO] 2025-11-20 20:05:32,107 | "GET /static/img/logo_amsa.png HTTP/1.1" 304 0
+[INFO] 2025-11-20 20:05:35,574 | "GET /login-programador/ HTTP/1.1" 200 9641
+[INFO] 2025-11-20 20:05:39,320 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 20:05:39,421 | "GET /painel-programador/ HTTP/1.1" 200 20190
+[INFO] 2025-11-20 20:06:00,786 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 20:06:00,904 | "GET / HTTP/1.1" 200 10290
+[INFO] 2025-11-20 20:06:05,952 | "GET /login-programador/ HTTP/1.1" 200 9641
+[INFO] 2025-11-20 20:06:13,160 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 20:06:13,238 | "GET /painel-programador/ HTTP/1.1" 200 20190
+[INFO] 2025-11-20 20:09:44,412 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 20:09:44,575 | "GET / HTTP/1.1" 200 9714
+[INFO] 2025-11-20 20:09:47,496 | "GET /login-programador/ HTTP/1.1" 200 9065
+[INFO] 2025-11-20 20:09:50,790 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 20:09:50,859 | "GET /painel-programador/ HTTP/1.1" 200 18813
+[INFO] 2025-11-20 20:13:12,586 | "GET /painel-programador/ HTTP/1.1" 200 17375
+[INFO] 2025-11-20 20:13:20,307 | "GET /programadores/ HTTP/1.1" 200 7988
+[INFO] 2025-11-20 20:15:45,497 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-20 20:15:46,630 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 20:15:48,793 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-20 20:15:49,586 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 20:15:50,357 | "GET /programadores/ HTTP/1.1" 200 7988
+[INFO] 2025-11-20 20:16:59,057 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-20 20:16:59,915 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 20:26:00,434 | C:\Users\User\Desktop\SistemaCatador_V8\sistema_catador_v8\settings.py changed, reloading.
+[INFO] 2025-11-20 20:27:12,859 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 20:27:16,860 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 20:27:16,976 | "GET / HTTP/1.1" 200 8525
+[INFO] 2025-11-20 20:27:24,206 | "GET /login-programador/ HTTP/1.1" 200 7876
+[INFO] 2025-11-20 20:27:27,633 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 20:27:27,709 | "GET /painel-programador/ HTTP/1.1" 200 17362
+[ERROR] 2025-11-20 20:28:01,159 | Internal Server Error: /programadores/novo/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\accounts\views_programadores.py", line 24, in _wrapped
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\accounts\views_programadores.py", line 105, in adicionar_programador
+    return render(request, "programadores/add.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'listar_programadores' not found. 'listar_programadores' is not a valid view function or pattern name.
+[ERROR] 2025-11-20 20:28:01,205 | "GET /programadores/novo/ HTTP/1.1" 500 171936
+[INFO] 2025-11-20 20:29:17,911 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\context_processors.py changed, reloading.
+[INFO] 2025-11-20 20:29:19,013 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 20:29:20,641 | C:\Users\User\Desktop\SistemaCatador_V8\sistema_catador_v8\settings.py changed, reloading.
+[INFO] 2025-11-20 20:29:21,439 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 20:30:37,117 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\urls.py changed, reloading.
+[INFO] 2025-11-20 20:30:37,850 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 20:31:17,977 | "GET /painel-programador/ HTTP/1.1" 200 17362
+[ERROR] 2025-11-20 20:31:21,747 | Internal Server Error: /programadores/novo/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\accounts\views_programadores.py", line 24, in _wrapped
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\accounts\views_programadores.py", line 105, in adicionar_programador
+    return render(request, "programadores/add.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'listar_programadores' not found. 'listar_programadores' is not a valid view function or pattern name.
+[ERROR] 2025-11-20 20:31:21,774 | "GET /programadores/novo/ HTTP/1.1" 500 171936
+[INFO] 2025-11-20 20:34:10,124 | "GET /painel-programador/ HTTP/1.1" 200 17362
+[INFO] 2025-11-20 20:34:13,473 | "GET /programadores/novo/ HTTP/1.1" 200 7660
+[INFO] 2025-11-20 20:34:42,688 | "POST /programadores/novo/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 20:34:42,782 | "GET /programadores/novo/ HTTP/1.1" 200 7660
+[INFO] 2025-11-20 20:34:52,205 | "GET /programadores/ HTTP/1.1" 200 7975
+[INFO] 2025-11-20 20:34:58,654 | "GET /programadores/ HTTP/1.1" 200 7975
+[INFO] 2025-11-20 20:35:01,321 | "GET /programadores/novo/ HTTP/1.1" 200 7660
+[INFO] 2025-11-20 20:35:09,522 | "POST /programadores/novo/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 20:35:09,609 | "GET /programadores/novo/ HTTP/1.1" 200 7660
+[INFO] 2025-11-20 20:35:13,087 | "GET /programadores/ HTTP/1.1" 200 7975
+[INFO] 2025-11-20 20:37:46,414 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views_programadores.py changed, reloading.
+[INFO] 2025-11-20 20:37:47,290 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 20:39:01,573 | "GET /programadores/ HTTP/1.1" 200 7975
+[INFO] 2025-11-20 20:39:04,996 | "GET /programadores/novo/ HTTP/1.1" 200 7904
+[ERROR] 2025-11-20 20:39:38,263 | Internal Server Error: /programadores/novo/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\accounts\views_programadores.py", line 24, in _wrapped
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\accounts\views_programadores.py", line 99, in adicionar_programador
+    return render(request, "programadores/senha_gerada.html", {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'listar_programadores' not found. 'listar_programadores' is not a valid view function or pattern name.
+[ERROR] 2025-11-20 20:39:38,280 | "POST /programadores/novo/ HTTP/1.1" 500 176488
+[INFO] 2025-11-20 20:43:08,386 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 20:43:15,748 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 20:43:15,836 | "GET / HTTP/1.1" 200 8525
+[INFO] 2025-11-20 20:43:15,891 | "GET /static/img/logo_amsa.png HTTP/1.1" 304 0
+[INFO] 2025-11-20 20:43:17,943 | "GET /login-programador/ HTTP/1.1" 200 7876
+[INFO] 2025-11-20 20:43:20,913 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 20:43:21,014 | "GET /painel-programador/ HTTP/1.1" 200 17863
+[INFO] 2025-11-20 20:43:25,264 | "GET /programadores/ HTTP/1.1" 200 8803
+[ERROR] 2025-11-20 20:43:35,997 | Internal Server Error: /programadores/5/excluir/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\context.py", line 88, in __getitem__
+    raise KeyError(key)
+KeyError: 'prog'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 897, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'RequestContext' has no attribute 'prog'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'prog'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\accounts\views_programadores.py", line 24, in _wrapped
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\accounts\views_programadores.py", line 157, in excluir_programador
+    return render(request, "programadores/delete.html", {"p": prog})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1075, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 743, in resolve
+    arg_vals.append(arg.resolve(context))
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 854, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [prog] in [{'True': True, 'False': False, 'None': None}, {}, {}, {'p': <User: teste>}]
+[ERROR] 2025-11-20 20:43:36,037 | "GET /programadores/5/excluir/ HTTP/1.1" 500 212359
+[INFO] 2025-11-20 20:47:29,914 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views_programadores.py changed, reloading.
+[INFO] 2025-11-20 20:47:30,668 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 20:48:39,763 | "GET /programadores/ HTTP/1.1" 200 8803
+[INFO] 2025-11-20 20:48:45,783 | "GET /programadores/5/excluir/ HTTP/1.1" 200 7133
+[INFO] 2025-11-20 20:48:49,417 | "POST /programadores/5/excluir/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 20:48:49,495 | "GET /programadores/ HTTP/1.1" 200 7975
+[ERROR] 2025-11-20 20:48:53,381 | Internal Server Error: /programadores/1/editar/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\accounts\views_programadores.py", line 24, in _wrapped
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\accounts\views_programadores.py", line 128, in editar_programador
+    return render(request, "programadores/edit.html", {"p": prog})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'listar_programadores' not found. 'listar_programadores' is not a valid view function or pattern name.
+[ERROR] 2025-11-20 20:48:53,401 | "GET /programadores/1/editar/ HTTP/1.1" 500 174377
+[INFO] 2025-11-20 20:51:37,142 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 20:51:43,290 | "GET /programadores/ HTTP/1.1" 200 7975
+[INFO] 2025-11-20 20:51:48,090 | "GET /programadores/1/editar/ HTTP/1.1" 200 8390
+[INFO] 2025-11-20 20:52:25,823 | "POST /programadores/1/editar/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 20:52:25,919 | "GET /programadores/ HTTP/1.1" 200 7983
+[INFO] 2025-11-20 20:52:38,003 | "GET /programadores/1/excluir/ HTTP/1.1" 200 6718
+[INFO] 2025-11-20 20:52:42,221 | "GET /programadores/ HTTP/1.1" 200 7983
+[INFO] 2025-11-20 20:52:44,144 | "GET /painel-programador/ HTTP/1.1" 200 17370
+[INFO] 2025-11-20 20:52:48,991 | "GET /municipios/novo/ HTTP/1.1" 200 10149
+[INFO] 2025-11-20 20:52:50,706 | "GET /programadores/novo/ HTTP/1.1" 200 7904
+[INFO] 2025-11-20 20:53:23,637 | "POST /programadores/novo/ HTTP/1.1" 200 7421
+[INFO] 2025-11-20 20:53:35,919 | "GET /programadores/ HTTP/1.1" 200 8844
+[INFO] 2025-11-20 20:53:45,851 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 20:53:45,946 | "GET / HTTP/1.1" 200 8525
+[INFO] 2025-11-20 20:53:48,757 | "GET /login-programador/ HTTP/1.1" 200 7876
+[INFO] 2025-11-20 20:53:59,948 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 20:54:00,034 | "GET /painel-programador/ HTTP/1.1" 200 17893
+[INFO] 2025-11-20 20:54:12,283 | "GET /programadores/ HTTP/1.1" 200 8844
+[INFO] 2025-11-20 20:54:18,566 | "GET /programadores/6/excluir/ HTTP/1.1" 200 7133
+[INFO] 2025-11-20 20:54:20,083 | "POST /programadores/6/excluir/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 20:54:20,176 | "GET /programadores/ HTTP/1.1" 302 0
+[WARNING] 2025-11-20 20:54:20,189 | Not Found: /accounts/login/
+[WARNING] 2025-11-20 20:54:20,190 | "GET /accounts/login/?next=/programadores/ HTTP/1.1" 404 7440
+[INFO] 2025-11-20 21:01:40,536 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views_programadores.py changed, reloading.
+[INFO] 2025-11-20 21:01:41,376 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 21:01:50,958 | "GET /programadores/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:01:51,044 | "GET /login-programador/?next=/programadores/ HTTP/1.1" 200 7876
+[INFO] 2025-11-20 21:02:05,279 | "POST /login-programador/?next=/programadores/ HTTP/1.1" 200 8042
+[INFO] 2025-11-20 21:02:08,657 | "POST /login-programador/?next=/programadores/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:02:08,756 | "GET /painel-programador/ HTTP/1.1" 200 17370
+[INFO] 2025-11-20 21:02:14,043 | "GET /programadores/novo/ HTTP/1.1" 200 7904
+[INFO] 2025-11-20 21:02:38,763 | "POST /programadores/novo/ HTTP/1.1" 200 7409
+[INFO] 2025-11-20 21:02:47,294 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:02:47,371 | "GET / HTTP/1.1" 200 8525
+[INFO] 2025-11-20 21:02:49,436 | "GET /login-programador/ HTTP/1.1" 200 7876
+[INFO] 2025-11-20 21:02:57,803 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:02:57,886 | "GET /painel-programador/ HTTP/1.1" 200 17881
+[INFO] 2025-11-20 21:03:01,516 | "GET /programadores/ HTTP/1.1" 200 8832
+[ERROR] 2025-11-20 21:03:07,849 | Internal Server Error: /programadores/1/excluir/
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 891, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\context.py", line 88, in __getitem__
+    raise KeyError(key)
+KeyError: 'p'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 897, in _resolve_lookup
+    if isinstance(current, BaseContext) and getattr(
+                                            ^^^^^^^^
+AttributeError: type object 'RequestContext' has no attribute 'p'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 907, in _resolve_lookup
+    current = current[int(bit)]
+                      ^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'p'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\accounts\views_programadores.py", line 18, in _wrapped
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\accounts\views_programadores.py", line 193, in excluir_programador
+    return render(request, "programadores/delete.html", contexto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1075, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 743, in resolve
+    arg_vals.append(arg.resolve(context))
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 854, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 914, in _resolve_lookup
+    raise VariableDoesNotExist(
+django.template.base.VariableDoesNotExist: Failed lookup for key [p] in [{'True': True, 'False': False, 'None': None}, {}, {}, {'prog': <User: programador>, 'ultimo': False, 'proprio': False}]
+[ERROR] 2025-11-20 21:03:07,894 | "GET /programadores/1/excluir/ HTTP/1.1" 500 215021
+[INFO] 2025-11-20 21:03:15,993 | "GET /programadores/ HTTP/1.1" 200 8832
+[INFO] 2025-11-20 21:11:13,907 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 21:11:16,267 | "GET /programadores/ HTTP/1.1" 200 9576
+[INFO] 2025-11-20 21:11:28,395 | "GET /programadores/ HTTP/1.1" 200 9576
+[INFO] 2025-11-20 21:11:31,763 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:11:31,841 | "GET / HTTP/1.1" 200 8525
+[INFO] 2025-11-20 21:11:34,423 | "GET /login-programador/ HTTP/1.1" 200 7876
+[INFO] 2025-11-20 21:11:37,342 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:11:37,430 | "GET /painel-programador/ HTTP/1.1" 200 17881
+[INFO] 2025-11-20 21:11:40,736 | "GET /programadores/ HTTP/1.1" 200 9581
+[INFO] 2025-11-20 21:11:43,797 | "GET /programadores/1/editar/ HTTP/1.1" 200 8881
+[INFO] 2025-11-20 21:11:56,060 | "GET /programadores/ HTTP/1.1" 200 9581
+[INFO] 2025-11-20 21:12:10,220 | "GET /encarregados/novo/ HTTP/1.1" 200 9837
+[INFO] 2025-11-20 21:12:12,221 | "GET /municipios/novo/ HTTP/1.1" 200 10162
+[INFO] 2025-11-20 21:12:22,627 | "POST /municipios/novo/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:12:22,714 | "GET /painel-programador/ HTTP/1.1" 200 19025
+[INFO] 2025-11-20 21:12:24,629 | "GET /municipios/novo/ HTTP/1.1" 200 10162
+[INFO] 2025-11-20 21:12:29,661 | "POST /municipios/novo/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:12:29,749 | "GET /painel-programador/ HTTP/1.1" 200 20184
+[INFO] 2025-11-20 21:12:31,760 | "GET /municipios/novo/ HTTP/1.1" 200 10162
+[INFO] 2025-11-20 21:12:36,453 | "POST /municipios/novo/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:12:36,536 | "GET /painel-programador/ HTTP/1.1" 200 21334
+[INFO] 2025-11-20 21:12:41,181 | "GET /encarregados/novo/ HTTP/1.1" 200 10036
+[INFO] 2025-11-20 21:13:13,514 | "POST /encarregados/novo/ HTTP/1.1" 200 7700
+[INFO] 2025-11-20 21:13:19,372 | "GET /painel-programador/ HTTP/1.1" 200 22441
+[INFO] 2025-11-20 21:13:21,050 | "GET /encarregados/novo/ HTTP/1.1" 200 10036
+[INFO] 2025-11-20 21:13:41,575 | "POST /encarregados/novo/ HTTP/1.1" 200 7700
+[INFO] 2025-11-20 21:14:55,165 | "GET /painel-programador/ HTTP/1.1" 200 23548
+[INFO] 2025-11-20 21:15:04,341 | "GET /encarregados/9/excluir/ HTTP/1.1" 200 7038
+[INFO] 2025-11-20 21:15:05,913 | "POST /encarregados/9/excluir/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:15:05,999 | "GET /painel-programador/ HTTP/1.1" 200 22441
+[INFO] 2025-11-20 21:19:49,243 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\models.py changed, reloading.
+[INFO] 2025-11-20 21:19:50,063 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 21:25:48,557 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-20 21:25:49,339 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 21:26:15,898 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-20 21:26:16,713 | Watching for file changes with StatReloader
+[INFO] 2025-11-20 21:27:33,580 | "GET /painel-programador/ HTTP/1.1" 200 22441
+[INFO] 2025-11-20 21:27:37,809 | "GET /encarregados/novo/ HTTP/1.1" 200 10036
+[INFO] 2025-11-20 21:27:58,854 | "POST /encarregados/novo/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:27:58,958 | "GET /encarregados/novo/ HTTP/1.1" 200 10036
+[INFO] 2025-11-20 21:28:04,139 | "GET /painel-programador/ HTTP/1.1" 200 22441
+[INFO] 2025-11-20 21:28:07,336 | "GET /painel-programador/ HTTP/1.1" 200 22441
+[INFO] 2025-11-20 21:28:14,453 | "GET /encarregados/novo/ HTTP/1.1" 200 10036
+[INFO] 2025-11-20 21:28:23,120 | "POST /encarregados/novo/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:28:23,211 | "GET /encarregados/novo/ HTTP/1.1" 200 10036
+[INFO] 2025-11-20 21:28:25,722 | "GET /painel-programador/ HTTP/1.1" 200 22441
+[INFO] 2025-11-20 21:28:27,903 | "GET /painel-programador/ HTTP/1.1" 200 22441
+[INFO] 2025-11-20 21:28:32,337 | "GET /encarregados/novo/ HTTP/1.1" 200 10036
+[INFO] 2025-11-20 21:28:38,173 | "GET /encarregados/novo/ HTTP/1.1" 200 10036
+[INFO] 2025-11-20 21:28:59,907 | "POST /encarregados/novo/ HTTP/1.1" 200 7698
+[INFO] 2025-11-20 21:29:02,161 | "GET /painel-programador/ HTTP/1.1" 200 23548
+[INFO] 2025-11-20 21:29:05,571 | "GET /encarregados/novo/ HTTP/1.1" 200 10036
+[INFO] 2025-11-20 21:29:18,885 | "POST /encarregados/novo/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:29:18,983 | "GET /encarregados/novo/ HTTP/1.1" 200 10036
+[INFO] 2025-11-20 21:29:21,187 | "GET /painel-programador/ HTTP/1.1" 200 23548
+[INFO] 2025-11-20 21:32:54,070 | "GET /painel-programador/ HTTP/1.1" 200 23548
+[INFO] 2025-11-20 21:32:55,085 | "GET /painel-programador/ HTTP/1.1" 200 23548
+[INFO] 2025-11-20 21:32:57,710 | "GET /encarregados/novo/ HTTP/1.1" 200 11987
+[INFO] 2025-11-20 21:33:04,123 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:33:04,213 | "GET / HTTP/1.1" 200 9012
+[INFO] 2025-11-20 21:33:04,263 | "GET /static/img/logo_amsa.png HTTP/1.1" 304 0
+[INFO] 2025-11-20 21:33:06,478 | "GET /login-programador/ HTTP/1.1" 200 7876
+[INFO] 2025-11-20 21:33:09,489 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:33:09,582 | "GET /painel-programador/ HTTP/1.1" 200 23548
+[INFO] 2025-11-20 21:33:11,526 | "GET /encarregados/novo/ HTTP/1.1" 200 10084
+[INFO] 2025-11-20 21:33:19,206 | "GET /encarregados/novo/ HTTP/1.1" 200 10084
+[INFO] 2025-11-20 21:33:30,074 | "POST /encarregados/novo/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:33:30,167 | "GET /encarregados/novo/ HTTP/1.1" 200 10415
+[INFO] 2025-11-20 21:33:38,423 | "GET /painel-programador/ HTTP/1.1" 200 23548
+[INFO] 2025-11-20 21:33:40,121 | "GET /painel-programador/ HTTP/1.1" 200 23548
+[INFO] 2025-11-20 21:33:43,855 | "GET /encarregados/novo/ HTTP/1.1" 200 10084
+[INFO] 2025-11-20 21:34:06,126 | "POST /encarregados/novo/ HTTP/1.1" 200 7707
+[INFO] 2025-11-20 21:34:08,205 | "GET /painel-programador/ HTTP/1.1" 200 24664
+[INFO] 2025-11-20 21:34:11,371 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:34:11,439 | "GET / HTTP/1.1" 200 9152
+[INFO] 2025-11-20 21:34:19,426 | "GET /login-programador/ HTTP/1.1" 200 7876
+[INFO] 2025-11-20 21:34:22,552 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:34:22,647 | "GET /painel-programador/ HTTP/1.1" 200 24664
+[INFO] 2025-11-20 21:34:28,636 | "GET /encarregados/novo/ HTTP/1.1" 200 10084
+[INFO] 2025-11-20 21:34:41,819 | "POST /encarregados/novo/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:34:41,910 | "GET /encarregados/novo/ HTTP/1.1" 200 10415
+[INFO] 2025-11-20 21:34:49,000 | "GET /painel-programador/ HTTP/1.1" 200 24664
+[INFO] 2025-11-20 21:34:51,086 | "GET /municipios/novo/ HTTP/1.1" 200 10162
+[INFO] 2025-11-20 21:35:06,098 | "POST /municipios/novo/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:35:06,190 | "GET /painel-programador/ HTTP/1.1" 200 25815
+[INFO] 2025-11-20 21:35:10,902 | "GET /encarregados/novo/ HTTP/1.1" 200 10405
+[INFO] 2025-11-20 21:35:39,338 | "POST /encarregados/novo/ HTTP/1.1" 200 7705
+[INFO] 2025-11-20 21:35:53,215 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:35:53,304 | "GET / HTTP/1.1" 200 9365
+[INFO] 2025-11-20 21:36:07,248 | "POST / HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:36:07,333 | "GET /painel-municipio/ HTTP/1.1" 200 0
+[WARNING] 2025-11-20 21:36:18,333 | Forbidden (CSRF token from POST incorrect.): /
+[WARNING] 2025-11-20 21:36:18,333 | "POST / HTTP/1.1" 403 2504
+[INFO] 2025-11-20 21:36:22,318 | "GET / HTTP/1.1" 200 10146
+[INFO] 2025-11-20 21:36:32,363 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-20 21:36:32,451 | "GET / HTTP/1.1" 200 9365
+[INFO] 2025-11-20 21:41:03,206 | "GET / HTTP/1.1" 200 9947
+[INFO] 2025-11-20 21:41:27,615 | "GET / HTTP/1.1" 200 9947
+[INFO] 2025-11-20 21:44:11,827 | "GET / HTTP/1.1" 200 10043
+[INFO] 2025-11-20 21:47:02,953 | "GET / HTTP/1.1" 200 9600
+[INFO] 2025-11-20 21:48:57,128 | "GET / HTTP/1.1" 200 9600
+[INFO] 2025-11-20 21:49:37,209 | "GET / HTTP/1.1" 200 9867
+[WARNING] 2025-11-20 21:49:57,309 | Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[WARNING] 2025-11-20 21:49:57,310 | "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7518
+[INFO] 2025-11-20 21:51:56,770 | "GET / HTTP/1.1" 200 9867
+[INFO] 2025-11-20 21:52:05,152 | "GET / HTTP/1.1" 200 9867
+[INFO] 2025-11-20 21:52:12,802 | "GET / HTTP/1.1" 200 9867
+[INFO] 2025-11-20 21:52:21,368 | "GET / HTTP/1.1" 200 9867
+[INFO] 2025-11-20 21:52:38,551 | "GET / HTTP/1.1" 200 9867
+[INFO] 2025-11-20 21:52:53,255 | "GET /login-programador/ HTTP/1.1" 200 7876
+[INFO] 2025-11-21 18:17:16,796 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 18:17:26,765 | "GET / HTTP/1.1" 200 9867
+[INFO] 2025-11-21 18:17:26,818 | "GET /static/img/logo_amsa.png HTTP/1.1" 304 0
+[WARNING] 2025-11-21 18:17:27,221 | Not Found: /favicon.ico
+[WARNING] 2025-11-21 18:17:27,221 | "GET /favicon.ico HTTP/1.1" 404 7407
+[INFO] 2025-11-21 18:18:17,198 | "GET /esqueci-senha/ HTTP/1.1" 200 7057
+[INFO] 2025-11-21 18:18:40,979 | "POST /esqueci-senha/ HTTP/1.1" 200 7234
+[INFO] 2025-11-21 18:19:01,111 | "POST /esqueci-senha/ HTTP/1.1" 200 7234
+[INFO] 2025-11-21 18:19:06,998 | "GET / HTTP/1.1" 200 9867
+[INFO] 2025-11-21 18:19:09,226 | "GET /login-programador/ HTTP/1.1" 200 7876
+[INFO] 2025-11-21 18:19:12,542 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 18:19:12,680 | "GET /painel-programador/ HTTP/1.1" 200 26929
+[INFO] 2025-11-21 18:19:17,462 | "GET /encarregados/4/editar/ HTTP/1.1" 200 0
+[INFO] 2025-11-21 18:19:22,843 | "GET /encarregados/10/editar/ HTTP/1.1" 200 0
+[INFO] 2025-11-21 18:19:27,543 | "GET /encarregados/4/editar/ HTTP/1.1" 200 0
+[INFO] 2025-11-21 18:20:20,724 | "GET /municipios/3/editar/ HTTP/1.1" 200 9144
+[INFO] 2025-11-21 18:23:30,974 | "GET /painel-programador/ HTTP/1.1" 200 26929
+[INFO] 2025-11-21 18:23:34,367 | "GET /encarregados/4/editar/ HTTP/1.1" 200 10996
+[INFO] 2025-11-21 18:23:59,650 | "POST /encarregados/4/editar/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 18:23:59,742 | "GET /painel-programador/ HTTP/1.1" 200 26929
+[INFO] 2025-11-21 18:24:04,714 | "GET /encarregados/10/excluir/ HTTP/1.1" 200 7038
+[INFO] 2025-11-21 18:24:06,446 | "POST /encarregados/10/excluir/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 18:24:06,545 | "GET /painel-programador/ HTTP/1.1" 200 25822
+[INFO] 2025-11-21 18:24:11,603 | "GET /encarregados/novo/ HTTP/1.1" 200 10619
+[INFO] 2025-11-21 18:24:20,013 | "GET /encarregados/novo/ HTTP/1.1" 200 10151
+[INFO] 2025-11-21 18:24:30,851 | "POST /encarregados/novo/ HTTP/1.1" 200 7698
+[INFO] 2025-11-21 18:24:32,701 | "GET /painel-programador/ HTTP/1.1" 200 26929
+[INFO] 2025-11-21 18:24:38,944 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 18:24:39,011 | "GET / HTTP/1.1" 200 9867
+[INFO] 2025-11-21 18:24:41,527 | "GET /esqueci-senha/ HTTP/1.1" 200 7057
+[INFO] 2025-11-21 18:24:49,845 | "POST /esqueci-senha/ HTTP/1.1" 200 7234
+[INFO] 2025-11-21 18:25:02,111 | "POST /esqueci-senha/ HTTP/1.1" 200 7234
+[INFO] 2025-11-21 18:26:02,225 | "GET / HTTP/1.1" 200 9867
+[INFO] 2025-11-21 18:26:05,247 | "GET /login-programador/ HTTP/1.1" 200 7876
+[INFO] 2025-11-21 18:26:07,973 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 18:26:08,058 | "GET /painel-programador/ HTTP/1.1" 200 26929
+[INFO] 2025-11-21 18:26:13,274 | "GET /encarregados/4/excluir/ HTTP/1.1" 200 7057
+[INFO] 2025-11-21 18:26:15,026 | "POST /encarregados/4/excluir/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 18:26:15,112 | "GET /painel-programador/ HTTP/1.1" 200 25784
+[INFO] 2025-11-21 18:26:16,891 | "GET /encarregados/novo/ HTTP/1.1" 200 10385
+[INFO] 2025-11-21 18:26:35,373 | "POST /encarregados/novo/ HTTP/1.1" 200 7735
+[INFO] 2025-11-21 18:26:49,663 | "GET /painel-programador/ HTTP/1.1" 200 26931
+[INFO] 2025-11-21 18:26:52,272 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 18:26:52,358 | "GET / HTTP/1.1" 200 9867
+[INFO] 2025-11-21 18:26:54,254 | "GET /esqueci-senha/ HTTP/1.1" 200 7057
+[INFO] 2025-11-21 18:27:00,496 | "POST /esqueci-senha/ HTTP/1.1" 200 7238
+[INFO] 2025-11-21 18:32:29,312 | "GET / HTTP/1.1" 200 9867
+[INFO] 2025-11-21 18:40:43,350 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 18:40:44,166 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 18:40:46,751 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 18:40:47,583 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 18:51:23,253 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 18:51:24,027 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 18:51:27,773 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 18:51:29,077 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 18:51:30,468 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 18:51:31,220 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 18:51:34,684 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 18:51:35,411 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 18:51:36,980 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 18:51:37,747 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 18:51:42,508 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 18:51:43,240 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 18:51:44,516 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 18:51:45,221 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 18:52:05,418 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 18:52:06,156 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 18:58:03,058 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 18:58:03,879 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 18:58:27,159 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 18:58:27,908 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 19:15:16,520 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 19:15:17,278 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 19:15:18,792 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 19:15:19,511 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 19:19:55,331 | "GET /login-programador/ HTTP/1.1" 200 7876
+[INFO] 2025-11-21 19:19:58,706 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 19:19:58,813 | "GET /painel-programador/ HTTP/1.1" 200 26931
+[INFO] 2025-11-21 19:20:02,808 | "GET /encarregados/13/excluir/ HTTP/1.1" 200 7038
+[INFO] 2025-11-21 19:20:04,332 | "POST /encarregados/13/excluir/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 19:20:04,419 | "GET /painel-programador/ HTTP/1.1" 200 25824
+[INFO] 2025-11-21 19:20:06,458 | "GET /encarregados/novo/ HTTP/1.1" 200 17436
+[INFO] 2025-11-21 19:21:23,294 | "GET /encarregados/novo/ HTTP/1.1" 200 17202
+[INFO] 2025-11-21 19:51:30,070 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 19:51:30,934 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 19:59:20,707 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 19:59:21,595 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 19:59:24,979 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 19:59:25,678 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 20:00:05,129 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 20:00:05,860 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 20:00:07,143 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 20:00:08,009 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 20:00:09,393 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 20:00:10,093 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 20:00:12,715 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 20:00:13,543 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 20:00:15,604 | "GET /encarregados/novo/ HTTP/1.1" 200 17202
+[INFO] 2025-11-21 20:06:18,354 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 20:06:19,109 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 20:06:42,791 | "GET /encarregados/novo/ HTTP/1.1" 200 17202
+[INFO] 2025-11-21 20:07:01,566 | "GET /painel-programador/ HTTP/1.1" 200 25824
+[INFO] 2025-11-21 20:07:04,390 | "GET /encarregados/novo/ HTTP/1.1" 200 17202
+[INFO] 2025-11-21 20:08:51,597 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 20:08:52,465 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 20:08:54,492 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 20:08:54,583 | "GET / HTTP/1.1" 200 9737
+[INFO] 2025-11-21 20:08:57,135 | "GET /login-programador/ HTTP/1.1" 200 7876
+[INFO] 2025-11-21 20:08:59,968 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 20:09:00,068 | "GET /painel-programador/ HTTP/1.1" 200 25824
+[INFO] 2025-11-21 20:09:03,303 | "GET /encarregados/novo/ HTTP/1.1" 200 17202
+[INFO] 2025-11-21 20:24:23,229 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 20:24:23,992 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 20:24:28,526 | "GET /encarregados/novo/ HTTP/1.1" 200 17339
+[INFO] 2025-11-21 20:24:32,490 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 20:24:32,558 | "GET / HTTP/1.1" 200 9903
+[INFO] 2025-11-21 20:24:35,273 | "GET /login-programador/ HTTP/1.1" 200 8042
+[INFO] 2025-11-21 20:24:38,746 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 20:24:38,825 | "GET /painel-programador/ HTTP/1.1" 200 25961
+[INFO] 2025-11-21 20:24:42,742 | "GET /encarregados/novo/ HTTP/1.1" 200 17339
+[INFO] 2025-11-21 20:26:12,672 | "POST /encarregados/novo/ HTTP/1.1" 200 7838
+[INFO] 2025-11-21 20:26:20,673 | "GET /painel-programador/ HTTP/1.1" 200 27068
+[INFO] 2025-11-21 20:26:23,520 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 20:26:23,671 | "GET / HTTP/1.1" 200 10040
+[INFO] 2025-11-21 20:26:41,036 | "POST / HTTP/1.1" 302 0
+[INFO] 2025-11-21 20:26:41,103 | "GET /painel-municipio/ HTTP/1.1" 200 0
+[INFO] 2025-11-21 20:27:47,254 | "GET / HTTP/1.1" 200 10821
+[INFO] 2025-11-21 20:31:18,707 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 20:31:18,801 | "GET / HTTP/1.1" 200 10040
+[INFO] 2025-11-21 20:49:18,363 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 20:49:20,372 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 21:01:13,871 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 21:01:14,820 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 21:01:39,203 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py changed, reloading.
+[INFO] 2025-11-21 21:01:40,129 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 21:01:43,736 | C:\Users\User\Desktop\SistemaCatador_V8\accounts\models.py changed, reloading.
+[INFO] 2025-11-21 21:01:44,474 | Watching for file changes with StatReloader
+[INFO] 2025-11-21 21:03:28,926 | "GET / HTTP/1.1" 200 10040
+[INFO] 2025-11-21 21:03:31,299 | "GET /login-programador/ HTTP/1.1" 200 8042
+[INFO] 2025-11-21 21:03:35,828 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 21:03:35,953 | "GET /painel-programador/ HTTP/1.1" 200 27068
+[INFO] 2025-11-21 21:03:45,403 | "GET /municipios/novo/ HTTP/1.1" 200 10299
+[INFO] 2025-11-21 21:03:57,867 | "POST /municipios/novo/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 21:03:57,946 | "GET /painel-programador/ HTTP/1.1" 200 28215
+[INFO] 2025-11-21 21:03:59,561 | "GET /encarregados/novo/ HTTP/1.1" 200 17656
+[INFO] 2025-11-21 21:04:59,442 | "POST /encarregados/novo/ HTTP/1.1" 302 0
+[INFO] 2025-11-21 21:04:59,530 | "GET /encarregados/novo/ HTTP/1.1" 200 17673
+[INFO] 2025-11-21 21:05:04,797 | "GET /painel-programador/ HTTP/1.1" 200 28215
+[INFO] 2025-11-22 19:16:47,729 | Watching for file changes with StatReloader
+[INFO] 2025-11-22 19:17:01,657 | "GET / HTTP/1.1" 200 12068
+[INFO] 2025-11-22 19:17:01,714 | "GET /static/img/logo_amsa.png HTTP/1.1" 304 0
+[WARNING] 2025-11-22 19:17:02,115 | Not Found: /favicon.ico
+[WARNING] 2025-11-22 19:17:02,115 | "GET /favicon.ico HTTP/1.1" 404 7407
+[INFO] 2025-11-22 19:17:04,206 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-22 19:17:04,295 | "GET / HTTP/1.1" 200 10113
+[INFO] 2025-11-22 19:30:11,997 | "GET / HTTP/1.1" 200 11097
+[WARNING] 2025-11-22 19:30:12,120 | "GET /static/img/logo_amsa_branca.png HTTP/1.1" 404 1886
+[WARNING] 2025-11-22 19:30:12,327 | "GET /static/img/bg_folhas_soft.jpg HTTP/1.1" 404 1880
+[WARNING] 2025-11-22 19:30:12,479 | Not Found: /favicon.ico
+[WARNING] 2025-11-22 19:30:12,480 | "GET /favicon.ico HTTP/1.1" 404 7407
+[INFO] 2025-11-22 19:30:17,962 | "GET / HTTP/1.1" 200 11097
+[WARNING] 2025-11-22 19:30:18,002 | "GET /static/img/logo_amsa_branca.png HTTP/1.1" 404 1886
+[WARNING] 2025-11-22 19:30:18,034 | "GET /static/img/bg_folhas_soft.jpg HTTP/1.1" 404 1880
+[INFO] 2025-11-22 19:36:31,491 | "GET / HTTP/1.1" 200 10791
+[WARNING] 2025-11-22 19:36:31,549 | "GET /static/img/logo_amsa_branca.png HTTP/1.1" 404 1886
+[WARNING] 2025-11-22 19:36:31,587 | Not Found: /img/bg_login_premium.jpg
+[WARNING] 2025-11-22 19:36:31,588 | "GET /img/bg_login_premium.jpg HTTP/1.1" 404 7446
+[INFO] 2025-11-22 19:48:04,007 | "GET / HTTP/1.1" 200 10791
+[WARNING] 2025-11-22 19:48:04,059 | "GET /static/img/logo_amsa_branca.png HTTP/1.1" 404 1886
+[WARNING] 2025-11-22 19:48:04,092 | Not Found: /img/bg_login_premium.jpg
+[WARNING] 2025-11-22 19:48:04,094 | "GET /img/bg_login_premium.jpg HTTP/1.1" 404 7446
+[INFO] 2025-11-22 19:48:05,111 | "GET / HTTP/1.1" 200 10791
+[WARNING] 2025-11-22 19:48:05,153 | "GET /static/img/logo_amsa_branca.png HTTP/1.1" 404 1886
+[WARNING] 2025-11-22 19:48:05,189 | Not Found: /img/bg_login_premium.jpg
+[WARNING] 2025-11-22 19:48:05,189 | "GET /img/bg_login_premium.jpg HTTP/1.1" 404 7446
+[INFO] 2025-11-22 19:48:17,125 | "GET / HTTP/1.1" 200 10791
+[WARNING] 2025-11-22 19:48:17,169 | "GET /static/img/logo_amsa_branca.png HTTP/1.1" 404 1886
+[WARNING] 2025-11-22 19:48:17,199 | Not Found: /img/bg_login_premium.jpg
+[WARNING] 2025-11-22 19:48:17,199 | "GET /img/bg_login_premium.jpg HTTP/1.1" 404 7446
+[ERROR] 2025-11-22 19:58:42,029 | Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\accounts\views.py", line 253, in index
+    return render(request, "index.html", {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\User\Desktop\SistemaCatador_V8\venv\Lib\site-packages\django\template\base.py", line 577, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 26: 'static'. Did you forget to register or load this tag?
+[ERROR] 2025-11-22 19:58:42,061 | "GET / HTTP/1.1" 500 190166
+[INFO] 2025-11-22 20:01:35,576 | Watching for file changes with StatReloader
+[INFO] 2025-11-22 20:01:42,620 | "GET / HTTP/1.1" 200 7794
+[INFO] 2025-11-22 20:01:42,818 | "GET /static/img/bg_login.jpg HTTP/1.1" 200 175262
+[INFO] 2025-11-26 12:02:58,797 | Watching for file changes with StatReloader
+[INFO] 2025-11-26 12:03:05,314 | "GET / HTTP/1.1" 200 7794
+[INFO] 2025-11-26 12:03:05,374 | "GET /static/img/logo_amsa.png HTTP/1.1" 304 0
+[INFO] 2025-11-26 12:03:05,603 | "GET /static/img/bg_login.jpg HTTP/1.1" 304 0
+[WARNING] 2025-11-26 12:03:05,745 | Not Found: /favicon.ico
+[WARNING] 2025-11-26 12:03:05,745 | "GET /favicon.ico HTTP/1.1" 404 7407
+[INFO] 2025-11-26 12:03:58,953 | "GET / HTTP/1.1" 200 7795
+[INFO] 2025-11-26 12:04:09,552 | "GET / HTTP/1.1" 200 7795
+[INFO] 2025-11-26 12:04:24,515 | "GET / HTTP/1.1" 200 7795
+[INFO] 2025-11-26 12:04:50,061 | "POST / HTTP/1.1" 200 7891
+[INFO] 2025-11-26 12:05:07,710 | "POST / HTTP/1.1" 200 7891
+[INFO] 2025-11-26 12:05:28,711 | "POST / HTTP/1.1" 200 7891
+[INFO] 2025-11-26 12:05:32,108 | "GET /login-programador/ HTTP/1.1" 200 7543
+[INFO] 2025-11-26 12:05:39,424 | "POST /login-programador/ HTTP/1.1" 302 0
+[INFO] 2025-11-26 12:05:40,257 | "GET /painel-programador/ HTTP/1.1" 200 27456
+[INFO] 2025-11-26 12:06:07,414 | "GET /municipios/8/excluir/ HTTP/1.1" 200 6417
+[INFO] 2025-11-26 12:06:09,273 | "POST /municipios/8/excluir/ HTTP/1.1" 302 0
+[INFO] 2025-11-26 12:06:09,356 | "GET /painel-programador/ HTTP/1.1" 200 26309
+[INFO] 2025-11-26 12:06:17,223 | "GET /encarregados/novo/ HTTP/1.1" 200 16825
+[INFO] 2025-11-26 12:07:01,106 | "POST /encarregados/novo/ HTTP/1.1" 302 0
+[INFO] 2025-11-26 12:07:01,188 | "GET /encarregados/novo/ HTTP/1.1" 200 16911
+[INFO] 2025-11-26 12:07:21,569 | "GET /painel-programador/ HTTP/1.1" 200 26309
+[INFO] 2025-11-26 12:07:31,837 | "GET /encarregados/14/editar/ HTTP/1.1" 200 11408
+[INFO] 2025-11-26 12:07:44,110 | "GET /relatorios/logins/ HTTP/1.1" 200 91589
+[INFO] 2025-11-26 12:07:55,302 | "GET /logout/ HTTP/1.1" 302 0
+[INFO] 2025-11-26 12:07:55,418 | "GET / HTTP/1.1" 200 7730

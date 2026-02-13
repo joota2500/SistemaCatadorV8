@@ -1,0 +1,310 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Painel do Programador{% endblock %}
+
+{% block content %}
+
+<style>
+    .card-metric {
+        border: 0;
+        border-radius: 14px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+
+    .card-metric-icon {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .table-wrapper {
+        max-height: 380px;
+        overflow-y: auto;
+    }
+
+    .pill-small {
+        font-size: 11px;
+        padding: 3px 8px;
+        border-radius: 999px;
+    }
+</style>
+
+<div class="mb-4">
+    <h2 class="fw-bold text-success mb-1">
+        <i class="fa-solid fa-gauge-high"></i> Painel do Programador
+    </h2>
+    <p class="text-muted mb-0">
+        Visão geral dos municípios, encarregados, programadores e segurança do Sistema Catador V8.
+    </p>
+</div>
+
+<div class="row g-3 mb-4">
+
+    <!-- Card Municípios -->
+    <div class="col-md-4">
+        <div class="card card-metric h-100">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <div class="text-uppercase text-muted mb-1" style="font-size: 11px;">
+                            Municípios
+                        </div>
+                        <h3 class="fw-bold text-success mb-0">{{ municipios|length }}</h3>
+                        <small class="text-muted">Consorciados cadastrados no sistema</small>
+                    </div>
+                    <div class="card-metric-icon" style="background:#e8f5e9;color:#145c3a;">
+                        <i class="fa-solid fa-city"></i>
+                    </div>
+                </div>
+                <hr class="my-3">
+                <a href="{% url 'add_municipio' %}" class="btn btn-success btn-sm">
+                    <i class="fa-solid fa-plus"></i> Novo Município
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Encarregados -->
+    <div class="col-md-4">
+        <div class="card card-metric h-100">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <div class="text-uppercase text-muted mb-1" style="font-size: 11px;">
+                            Encarregados
+                        </div>
+                        <h3 class="fw-bold text-primary mb-0">{{ encarregados|length }}</h3>
+                        <small class="text-muted">Responsáveis pela operação municipal</small>
+                    </div>
+                    <div class="card-metric-icon" style="background:#e3f2fd;color:#0d47a1;">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                </div>
+                <hr class="my-3">
+                <a href="{% url 'add_encarregado' %}" class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-user-plus"></i> Novo Encarregado
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Programadores / Segurança -->
+    <div class="col-md-4">
+        <div class="card card-metric h-100">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <div class="text-uppercase text-muted mb-1" style="font-size: 11px;">
+                            Programadores & Segurança
+                        </div>
+                        <h3 class="fw-bold text-dark mb-0">
+                            {{ programadores|length }} <span style="font-size:14px;">programador(es)</span>
+                        </h3>
+                        <small class="text-muted">
+                            Controle de acesso e monitoramento de tentativas de login.
+                        </small>
+                    </div>
+                    <div class="card-metric-icon" style="background:#ffebee;color:#c62828;">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                </div>
+                <hr class="my-3">
+                <a href="{% url 'relatorio_logins' %}" class="btn btn-outline-danger btn-sm">
+                    <i class="fa-solid fa-list-check"></i> Relatórios de Acesso
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row g-4">
+
+    <!-- MUNICÍPIOS -->
+    <div class="col-lg-6">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="card-title fw-bold mb-0">
+                        <i class="fa-solid fa-city"></i> Municípios Cadastrados
+                    </h5>
+                    <span class="pill-small bg-light text-muted">
+                        {{ municipios|length }} município(s)
+                    </span>
+                </div>
+
+                <div class="table-responsive table-wrapper">
+                    <table class="table table-sm align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Nome</th>
+                                <th>Slug</th>
+                                <th>Status</th>
+                                <th class="text-end">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for m in municipios %}
+                            <tr>
+                                <td>{{ m.name }}</td>
+                                <td><small class="text-muted">{{ m.slug }}</small></td>
+                                <td>
+                                    {% if m.is_active %}
+                                        <span class="badge bg-success">Ativo</span>
+                                    {% else %}
+                                        <span class="badge bg-secondary">Inativo</span>
+                                    {% endif %}
+                                </td>
+                                <td class="text-end">
+                                    <a href="{% url 'edit_municipio' m.id %}" class="btn btn-warning btn-sm" title="Editar município">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </a>
+                                    <a href="{% url 'delete_municipio' m.id %}"
+                                       class="btn btn-danger btn-sm btn-confirm"
+                                       data-msg="Excluir o município {{ m.name }}?">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        {% empty %}
+                            <tr><td colspan="4" class="text-muted">Nenhum município cadastrado.</td></tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ENCARREGADOS -->
+    <div class="col-lg-6">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="card-title fw-bold mb-0">
+                        <i class="fa-solid fa-user-tie"></i> Encarregados Municipais
+                    </h5>
+                    <span class="pill-small bg-light text-muted">
+                        {{ encarregados|length }} encarregado(s)
+                    </span>
+                </div>
+
+                <div class="table-responsive table-wrapper">
+                    <table class="table table-sm align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Nome</th>
+                                <th>Município</th>
+                                <th>Permissão</th>
+                                <th class="text-end">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for u in encarregados %}
+                            <tr>
+                                <td>{{ u.full_name|default:u.username }}</td>
+                                <td>{{ u.municipality.name }}</td>
+                                <td>
+                                    {% if u.permission_level == "full" %}
+                                        <span class="badge bg-success">Completo</span>
+                                    {% elif u.permission_level == "view" %}
+                                        <span class="badge bg-secondary">Visualizar</span>
+                                    {% else %}
+                                        <span class="badge bg-info text-dark">Ver &amp; Baixar</span>
+                                    {% endif %}
+                                </td>
+                                <td class="text-end">
+                                    <a href="{% url 'edit_encarregado' u.id %}" class="btn btn-warning btn-sm" title="Editar encarregado">
+                                        <i class="fa-solid fa-pen"></i>
+                                    </a>
+                                    <a href="{% url 'delete_encarregado' u.id %}"
+                                       class="btn btn-danger btn-sm btn-confirm"
+                                       data-msg="Remover o encarregado {{ u.full_name|default:u.username }}?">
+                                        <i class="fa-solid fa-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        {% empty %}
+                            <tr><td colspan="4" class="text-muted">Nenhum encarregado cadastrado.</td></tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if programadores %}
+<div class="row g-4 mt-3">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <h5 class="card-title fw-bold mb-0">
+                        <i class="fa-solid fa-code"></i> Programadores do Sistema
+                    </h5>
+                    <span class="pill-small bg-light text-muted">
+                        Segurança: mínimo 1 e máximo 2 programadores
+                    </span>
+                </div>
+                <p class="text-muted mb-3" style="font-size: 13px;">
+                    Lista de usuários com acesso total ao sistema. Em versões futuras,
+                    aqui você poderá adicionar/editar programadores, sempre mantendo
+                    pelo menos 1 ativo para não deixar o sistema sem responsável técnico.
+                </p>
+
+                <div class="table-responsive">
+                    <table class="table table-sm align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Usuário</th>
+                                <th>Nome</th>
+                                <th>E-mail</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        {% for p in programadores %}
+                            <tr>
+                                <td>{{ p.username }}</td>
+                                <td>{{ p.full_name|default:"—" }}</td>
+                                <td>{{ p.email }}</td>
+                                <td>
+                                    {% if p.is_active %}
+                                        <span class="badge bg-success">Ativo</span>
+                                    {% else %}
+                                        <span class="badge bg-secondary">Inativo</span>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<script>
+    // Confirmação JS com mensagem personalizada
+    document.querySelectorAll(".btn-confirm").forEach(function(btn) {
+        btn.addEventListener("click", function(e) {
+            const msg = btn.getAttribute("data-msg") || "Tem certeza?";
+            if (!confirm(msg)) {
+                e.preventDefault();
+            }
+        });
+    });
+</script>
+
+{% endblock %}

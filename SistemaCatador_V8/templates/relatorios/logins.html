@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Relatórios de Acesso — Sistema Catador V8{% endblock %}
+
+{% block content %}
+
+<div class="mb-4">
+    <h2 class="fw-bold text-success mb-1">
+        <i class="fa-solid fa-shield-halved"></i> Relatórios de Acesso
+    </h2>
+    <p class="text-muted mb-0">
+        Histórico das últimas tentativas de login de encarregados e programadores.
+    </p>
+</div>
+
+<div class="alert alert-light border-0 shadow-sm mb-4">
+    <div class="d-flex align-items-center gap-2">
+        <i class="fa-solid fa-circle-info text-success"></i>
+        <div>
+            <strong>Política de segurança:</strong>
+            Após <strong>{{ max_tentativas }}</strong> tentativas falhas em
+            <strong>{{ janela_minutos }} minuto(s)</strong>, o usuário é temporariamente bloqueado
+            e um alerta é enviado aos programadores.
+        </div>
+    </div>
+</div>
+
+<div class="card border-0 shadow-sm">
+    <div class="card-body">
+        <h5 class="card-title fw-bold mb-3">
+            <i class="fa-solid fa-list-check"></i> Últimas Tentativas de Login
+        </h5>
+
+        <div class="table-responsive" style="max-height: 500px; overflow-y: auto;">
+            <table class="table table-sm align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Data / Hora</th>
+                        <th>Tipo</th>
+                        <th>Município</th>
+                        <th>Usuário digitado</th>
+                        <th>IP</th>
+                        <th>Resultado</th>
+                        <th>Bloqueio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for t in tentativas %}
+                    <tr>
+                        <td>
+                            {{ t.created_at|date:"d/m/Y H:i" }}
+                        </td>
+                        <td>
+                            {% if t.is_programador %}
+                                <span class="badge bg-dark">Programador</span>
+                            {% else %}
+                                <span class="badge bg-success">Encarregado</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if t.municipality %}
+                                {{ t.municipality.name }}
+                            {% else %}
+                                <span class="text-muted">—</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <code>{{ t.username_typed }}</code>
+                        </td>
+                        <td>
+                            <small class="text-muted">{{ t.ip_address|default:"—" }}</small>
+                        </td>
+                        <td>
+                            {% if t.success %}
+                                <span class="badge bg-success">
+                                    <i class="fa-solid fa-check"></i> Sucesso
+                                </span>
+                            {% else %}
+                                <span class="badge bg-danger">
+                                    <i class="fa-solid fa-xmark"></i> Falha
+                                </span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if t.locked %}
+                                <span class="badge bg-warning text-dark">
+                                    <i class="fa-solid fa-lock"></i> Bloqueado
+                                </span>
+                            {% else %}
+                                <span class="text-muted">—</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% empty %}
+                    <tr>
+                        <td colspan="7" class="text-muted text-center">
+                            Nenhuma tentativa registrada até o momento.
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

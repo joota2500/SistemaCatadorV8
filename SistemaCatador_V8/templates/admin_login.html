@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Acesso do Programador — Sistema Catador V8{% endblock %}
+
+{% block content %}
+
+<style>
+
+    /* Fundo ambiental */
+    body {
+        background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Cartão */
+    .login-card {
+        width: 100%;
+        max-width: 450px;
+        background: white;
+        padding: 35px;
+        border-radius: 18px;
+        box-shadow: 0px 10px 28px rgba(0,0,0,0.18);
+        animation: slideDown 0.55s ease-out;
+    }
+
+    @keyframes slideDown {
+        from { transform: translateY(-25px); opacity: 0; }
+        to   { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Erro */
+    .error-box {
+        background: #ffebee;
+        border-left: 5px solid #c62828;
+        padding: 12px;
+        border-radius: 8px;
+        color: #b71c1c;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 18px;
+        font-weight: 600;
+        animation: fadeIn 0.4s;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+
+    /* Card shake (erro) */
+    @keyframes shake {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-6px); }
+        50% { transform: translateX(6px); }
+        75% { transform: translateX(-4px); }
+        100% { transform: translateX(0); }
+    }
+
+    .shake {
+        animation: shake 0.38s ease-in-out;
+    }
+
+    /* Olho do campo senha */
+    .input-group-text {
+        cursor: pointer;
+    }
+
+</style>
+
+
+<div class="login-card" id="cardLogin">
+
+    <!-- Logo -->
+    <div class="text-center mb-3">
+        <img src="{% static 'img/logo_amsa.png' %}" width="130">
+    </div>
+
+    <h3 class="text-center fw-bold" style="color:#1b5e20;">
+        <i class="fa-solid fa-user-gear"></i> Programador
+    </h3>
+
+    <p class="text-center mb-4" style="color:#4e6654;">
+        Acesso restrito ao controle geral do sistema
+    </p>
+
+    {% if error %}
+    <div class="error-box">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        {{ error }}
+    </div>
+    {% endif %}
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <div class="mb-3">
+            <label class="fw-bold">Usuário</label>
+            <input type="text" name="username" class="form-control" placeholder="Digite seu usuário" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="fw-bold">Senha</label>
+            <div class="input-group">
+                <input type="password" id="password" class="form-control" name="password" placeholder="Digite a senha" required>
+                <span class="input-group-text" id="togglePassword">
+                    <i class="fa-solid fa-eye"></i>
+                </span>
+            </div>
+        </div>
+
+        <button class="btn btn-success w-100 mt-2">
+            <i class="fa-solid fa-right-to-bracket"></i> Entrar
+        </button>
+    </form>
+
+    <div class="text-center mt-3">
+        <a href="/" class="text-muted" style="font-weight:600;">
+            <i class="fa-solid fa-arrow-left"></i> Voltar para o login
+        </a>
+    </div>
+
+</div>
+
+<!-- SCRIPT: Mostrar senha -->
+<script>
+document.getElementById("togglePassword").addEventListener("click", function () {
+    const input = document.getElementById("password");
+    const icon = this.querySelector("i");
+
+    if (input.type === "password") {
+        input.type = "text";
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+    } else {
+        input.type = "password";
+        icon.classList.remove("fa-eye-slash");
+        icon.classList.add("fa-eye");
+    }
+});
+</script>
+
+<!-- SCRIPT: Tremer ao erro -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const erro = "{{ error|default:'' }}".trim();
+    if (erro !== "") {
+        const card = document.getElementById("cardLogin");
+        card.classList.add("shake");
+        setTimeout(() => card.classList.remove("shake"), 600);
+    }
+});
+</script>
+
+{% endblock %}

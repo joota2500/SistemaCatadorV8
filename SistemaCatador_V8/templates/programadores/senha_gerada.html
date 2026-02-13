@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Programador Criado{% endblock %}
+
+{% block content %}
+
+<div class="mb-4">
+    <h2 class="fw-bold text-success mb-1">
+        <i class="fa-solid fa-key"></i> Programador Criado com Sucesso
+    </h2>
+    <p class="text-muted">
+        As credenciais foram geradas corretamente.
+    </p>
+</div>
+
+<div class="card border-0 shadow-sm">
+    <div class="card-body">
+
+        <div class="alert alert-success fw-bold">
+            <i class="fa-solid fa-circle-check"></i>
+            Novo programador adicionado ao sistema!
+        </div>
+
+        <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between">
+                <strong>Nome:</strong>
+                <span>{{ nome }}</span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between">
+                <strong>Usuário:</strong>
+                <span>{{ username }}</span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between">
+                <strong>Senha Inicial:</strong>
+                <span class="text-success fw-bold" style="font-size: 18px;">0000</span>
+            </li>
+
+            <li class="list-group-item text-muted">
+                <small>
+                    O programador deverá alterar essa senha após o primeiro login.
+                </small>
+            </li>
+        </ul>
+
+        <a href="{% url 'lista_programadores' %}" class="btn btn-success w-100">
+            <i class="fa-solid fa-arrow-left"></i> Voltar à Lista de Programadores
+        </a>
+
+    </div>
+</div>
+
+{% endblock %}

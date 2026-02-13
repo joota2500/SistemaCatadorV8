@@ -1,0 +1,344 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Cadastrar Encarregado municipal{% endblock %}
+
+{% block content %}
+
+<style>
+    .form-card {
+        max-width: 760px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 35px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .photo-preview {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid #ddd;
+        background: #f8f8f8;
+    }
+
+    .section-title {
+        font-size: 15px;
+        font-weight: 700;
+        color: #2e7d32;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        margin-top: 20px;
+        margin-bottom: 8px;
+    }
+</style>
+
+<h3 class="text-success fw-bold text-center mb-4">
+    <i class="fa-solid fa-user-plus"></i> Cadastrar Encarregado Municipal
+</h3>
+
+<div class="form-card">
+
+    <!-- 🔔 MENSAGENS PROFISSIONAIS -->
+    {% if messages %}
+        {% for m in messages %}
+            <div class="alert alert-danger fw-bold" style="font-size: 15px;">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span>{{ m|safe }}</span>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+<form method="POST" enctype="multipart/form-data" id="formAddEncarregado">
+    {% csrf_token %}
+
+    <!-- DADOS PESSOAIS -->
+    <div class="section-title">
+        <i class="fa-solid fa-id-card"></i> Dados pessoais
+    </div>
+
+    <div class="row">
+        <!-- Nome -->
+        <div class="col-md-6 mb-3">
+            <label class="fw-bold">Nome Completo *</label>
+            <input type="text" class="form-control" name="full_name"
+                   placeholder="Insira o nome completo"
+                   required>
+        </div>
+
+        <!-- Apelido -->
+        <div class="col-md-6 mb-3">
+            <label class="fw-bold">Apelido</label>
+            <input type="text" class="form-control" name="nickname"
+                   placeholder="Insira o apelido (opcional)">
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- CPF -->
+        <div class="col-md-6 mb-3">
+            <label class="fw-bold">CPF</label>
+            <input type="text" class="form-control" id="cpf_input" name="cpf"
+                   placeholder="000.000.000-00" maxlength="14">
+        </div>
+
+        <!-- Data Nasc -->
+        <div class="col-md-6 mb-3">
+            <label class="fw-bold">Data de Nascimento</label>
+            <input type="date" class="form-control" name="birth_date">
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Telefone -->
+        <div class="col-md-6 mb-3">
+            <label class="fw-bold">Telefone</label>
+            <input type="text" class="form-control" name="phone"
+                   placeholder="Insira o telefone">
+        </div>
+
+        <!-- Endereço -->
+        <div class="col-md-6 mb-3">
+            <label class="fw-bold">Endereço</label>
+            <input type="text" class="form-control" name="address"
+                   placeholder="Insira o endereço">
+        </div>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="mb-3">
+        <label class="fw-bold">E-mail *</label>
+        <input type="email" class="form-control"
+               name="email" placeholder="email@exemplo.com" required>
+        <small class="text-muted">
+            Será utilizado para recuperação de senha. Informe um e-mail válido.
+        </small>
+    </div>
+
+    <!-- LOGIN E SENHA -->
+    <div class="section-title">
+        <i class="fa-solid fa-lock"></i> Login e senha de acesso
+    </div>
+
+    <!-- LOGIN -->
+    <div class="mb-3">
+        <label class="fw-bold">Login (usuário) — opcional</label>
+        <input type="text" class="form-control" name="username"
+               id="username_input"
+               placeholder="Ex: joaobaturite">
+        <small class="text-muted">
+            Sem espaços e sem acentos. Se deixar em branco, o sistema gera um login automático.
+        </small>
+    </div>
+
+    <!-- SENHA -->
+    <div class="mb-3">
+        <label class="fw-bold">Senha — opcional</label>
+        <div class="input-group">
+            <input type="password" class="form-control"
+                   name="password" id="password_input"
+                   placeholder="Digite uma senha ou deixe em branco para gerar automática">
+            <button type="button" class="btn btn-outline-secondary"
+                    onclick="toggleSenhaAdd()">
+                <i class="fa-solid fa-eye"></i>
+            </button>
+        </div>
+        <small class="text-muted">
+            Sem espaços, sem acentos. Mínimo de 4 caracteres.
+        </small>
+    </div>
+
+    <!-- HIDDEN CONFIRMS (preenchidos via JS) -->
+    <input type="hidden" name="confirm_username" id="confirm_username">
+    <input type="hidden" name="confirm_password" id="confirm_password">
+
+    <!-- MUNICÍPIO -->
+    <div class="section-title">
+        <i class="fa-solid fa-city"></i> Município
+    </div>
+
+    <div class="mb-3">
+        <label class="fw-bold">Município *</label>
+        <select class="form-select" name="municipality" required>
+            <option value="">Selecione...</option>
+            {% for m in municipios %}
+                <option value="{{ m.id }}">{{ m.name }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <!-- Foto -->
+    <div class="section-title">
+        <i class="fa-solid fa-camera"></i> Foto do encarregado (opcional)
+    </div>
+
+    <div class="mb-3">
+        <input type="file" class="form-control" name="photo">
+    </div>
+
+    <!-- Botões -->
+    <div class="d-flex justify-content-between mt-4">
+        <a href="{% url 'painel_programador' %}" class="btn btn-secondary">
+            Cancelar
+        </a>
+
+        <button type="submit" class="btn btn-success">
+            <i class="fa-solid fa-check"></i> Cadastrar Encarregado
+        </button>
+    </div>
+</form>
+
+</div>
+
+<!-- MODAL CONFIRMAÇÃO LOGIN -->
+<div class="modal fade" id="modalLoginConfirm" tabindex="-1"
+     aria-labelledby="modalLoginLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLoginLabel">
+            Confirmar login do encarregado
+        </h5>
+        <button type="button" class="btn-close"
+                data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        Você digitou o login:
+        <br>
+        <strong id="login_manualmente_digitado"></strong>
+        <br><br>
+        Deseja usar exatamente este login ou prefere que o sistema gere um login automático sem acentos?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-success"
+                onclick="confirmarLogin('usar_manual')">
+            Usar esse login
+        </button>
+        <button type="button" class="btn btn-success"
+                onclick="confirmarLogin('gerar_auto')">
+            Gerar login automático
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL CONFIRMAÇÃO SENHA -->
+<div class="modal fade" id="modalSenhaConfirm" tabindex="-1"
+     aria-labelledby="modalSenhaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalSenhaLabel">
+            Confirmar senha do encarregado
+        </h5>
+        <button type="button" class="btn-close"
+                data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        Você digitou uma senha manual para este encarregado.
+        <br><br>
+        Deseja usar exatamente essa senha ou prefere que o sistema gere uma senha automática segura?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-success"
+                onclick="confirmarSenha('usar_manual')">
+            Usar essa senha
+        </button>
+        <button type="button" class="btn btn-success"
+                onclick="confirmarSenha('gerar_auto')">
+            Gerar senha automática
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Máscara CPF
+document.getElementById("cpf_input").addEventListener("input", function () {
+    let cpf = this.value.replace(/\D/g, "");
+    if (cpf.length <= 11) {
+        cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
+        cpf = cpf.replace(/(\d{3})(\d)/, "$1.$2");
+        cpf = cpf.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+        this.value = cpf;
+    }
+});
+
+// Mostrar / ocultar senha
+function toggleSenhaAdd() {
+    const campo = document.getElementById("password_input");
+    campo.type = campo.type === "password" ? "text" : "password";
+}
+
+// Fluxo de confirmação com modais
+let proximaEtapa = null;
+
+document.getElementById("formAddEncarregado").addEventListener("submit", function (e) {
+    const username = document.getElementById("username_input").value.trim();
+    const password = document.getElementById("password_input").value.trim();
+    const confirmUsername = document.getElementById("confirm_username").value;
+    const confirmPassword = document.getElementById("confirm_password").value;
+
+    // Se já confirmou tudo, deixa ir
+    if ((username === "" || confirmUsername) && (password === "" || confirmPassword)) {
+        return; // deixa enviar
+    }
+
+    e.preventDefault();
+
+    // 1º pergunta sobre login, se ainda não confirmou e o campo tem valor
+    if (username !== "" && !confirmUsername) {
+        document.getElementById("login_manualmente_digitado").innerText = username;
+        const modalLogin = new bootstrap.Modal(document.getElementById("modalLoginConfirm"));
+        proximaEtapa = "perguntar_senha";
+        modalLogin.show();
+        return;
+    }
+
+    // 2º pergunta sobre senha, se ainda não confirmou e o campo tem valor
+    if (password !== "" && !confirmPassword) {
+        const modalSenha = new bootstrap.Modal(document.getElementById("modalSenhaConfirm"));
+        proximaEtapa = "enviar_form";
+        modalSenha.show();
+        return;
+    }
+
+});
+
+// Chamada pelos botões do modal de login
+function confirmarLogin(acao) {
+    document.getElementById("confirm_username").value = acao;
+    const modalLoginEl = document.getElementById("modalLoginConfirm");
+    const modalLogin = bootstrap.Modal.getInstance(modalLoginEl);
+    modalLogin.hide();
+
+    if (proximaEtapa === "perguntar_senha") {
+        const password = document.getElementById("password_input").value.trim();
+        const confirmPassword = document.getElementById("confirm_password").value;
+        if (password !== "" && !confirmPassword) {
+            const modalSenha = new bootstrap.Modal(document.getElementById("modalSenhaConfirm"));
+            proximaEtapa = "enviar_form";
+            modalSenha.show();
+            return;
+        }
+    }
+
+    document.getElementById("formAddEncarregado").submit();
+}
+
+// Chamada pelos botões do modal de senha
+function confirmarSenha(acao) {
+    document.getElementById("confirm_password").value = acao;
+    const modalSenhaEl = document.getElementById("modalSenhaConfirm");
+    const modalSenha = bootstrap.Modal.getInstance(modalSenhaEl);
+    modalSenha.hide();
+
+    document.getElementById("formAddEncarregado").submit();
+}
+</script>
+
+{% endblock %}

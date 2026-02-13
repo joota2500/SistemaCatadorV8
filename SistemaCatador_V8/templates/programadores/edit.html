@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Editar Programador{% endblock %}
+
+{% block content %}
+
+<div class="mb-4">
+    <h2 class="fw-bold text-success mb-1">
+        <i class="fa-solid fa-user-pen"></i> Editar Programador
+    </h2>
+    <p class="text-muted">Atualize as informações do programador.</p>
+</div>
+
+<div class="card border-0 shadow-sm">
+    <div class="card-body">
+
+        {% if messages %}
+            {% for m in messages %}
+                <div class="alert alert-{{ m.tags }} fw-bold">
+                    <i class="fa-solid fa-info-circle"></i> {{ m }}
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        <form method="POST">
+            {% csrf_token %}
+
+            <!-- Nome -->
+            <div class="mb-3">
+                <label class="form-label fw-bold">Nome Completo</label>
+                <input type="text" name="full_name"
+                       value="{{ prog.full_name }}"
+                       class="form-control" required>
+            </div>
+
+            <!-- Username (somente visual, não editável) -->
+            <div class="mb-3">
+                <label class="form-label fw-bold">Usuário (não editável)</label>
+                <input type="text"
+                       value="{{ prog.username }}"
+                       class="form-control bg-light"
+                       disabled>
+            </div>
+
+            <!-- E-mail -->
+            <div class="mb-3">
+                <label class="form-label fw-bold">E-mail</label>
+                <input type="email" name="email"
+                       value="{{ prog.email }}"
+                       class="form-control" required>
+            </div>
+
+            <hr>
+
+            <!-- Alterar senha -->
+            <h6 class="fw-bold text-success">Alterar Senha</h6>
+            <p class="text-muted" style="margin-top:-5px;font-size:13px;">
+                Preencha apenas se desejar alterar a senha deste programador.
+            </p>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Nova Senha</label>
+                <input type="password" name="password1"
+                       class="form-control" placeholder="Nova senha">
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Confirmar Nova Senha</label>
+                <input type="password" name="password2"
+                       class="form-control" placeholder="Repita a nova senha">
+            </div>
+
+            <button class="btn btn-success w-100 mt-2">
+                <i class="fa-solid fa-floppy-disk"></i> Salvar Alterações
+            </button>
+
+        </form>
+
+        <a href="{% url 'lista_programadores' %}" class="btn btn-outline-success w-100 mt-3">
+            <i class="fa-solid fa-arrow-left"></i> Voltar
+        </a>
+
+    </div>
+</div>
+
+{% endblock %}
